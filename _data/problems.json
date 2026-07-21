@@ -1,0 +1,1325 @@
+[
+  {
+    "num": "BISHI1",
+    "title": "【模板】序列操作",
+    "diff": "入门-4",
+    "count": "11102",
+    "href": "https://www.nowcoder.com/practice/12da4185c0bb45918cfdc3072e544069?tpId=389&tqId=11211624&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "基础算法",
+    "sub": "简单库函数数据结构"
+  },
+  {
+    "num": "BISHI2",
+    "title": "【模板】栈的操作",
+    "diff": "入门-4",
+    "count": "9721",
+    "href": "https://www.nowcoder.com/practice/cdf02ea916454957b575585634e5773a?tpId=389&tqId=11211527&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "基础算法",
+    "sub": "简单库函数数据结构"
+  },
+  {
+    "num": "BISHI3",
+    "title": "【模板】队列操作",
+    "diff": "入门-4",
+    "count": "7340",
+    "href": "https://www.nowcoder.com/practice/1137c8f6ffac4d5d94cc1b0cb08723f9?tpId=389&tqId=11211537&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "基础算法",
+    "sub": "简单库函数数据结构"
+  },
+  {
+    "num": "BISHI4",
+    "title": "【模板】集合操作",
+    "diff": "入门-5",
+    "count": "4583",
+    "href": "https://www.nowcoder.com/practice/a37b91f84cdf490b8d8b990794211135?tpId=389&tqId=11210039&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "基础算法",
+    "sub": "简单库函数数据结构"
+  },
+  {
+    "num": "BISHI5",
+    "title": "【模板】多重集合操作",
+    "diff": "入门-5",
+    "count": "3544",
+    "href": "https://www.nowcoder.com/practice/aaf8b53f6ea74ad6beabed77bb275725?tpId=389&tqId=11210128&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "基础算法",
+    "sub": "简单库函数数据结构"
+  },
+  {
+    "num": "BISHI6",
+    "title": "【模板】整数优先队列",
+    "diff": "入门-5",
+    "count": "4420",
+    "href": "https://www.nowcoder.com/practice/a88e9711f7b04369982bbe8902278ae4?tpId=389&tqId=11211911&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "基础算法",
+    "sub": "简单库函数数据结构"
+  },
+  {
+    "num": "BISHI7",
+    "title": "字符串哈希",
+    "diff": "入门-4",
+    "count": "5579",
+    "href": "https://www.nowcoder.com/practice/dadbd37fee7c43f0ae407db11b16b4bf?tpId=389&tqId=11211639&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "基础算法",
+    "sub": "简单库函数数据结构"
+  },
+  {
+    "num": "BISHI8",
+    "title": "大整数哈希",
+    "diff": "入门-5",
+    "count": "3729",
+    "href": "https://www.nowcoder.com/practice/29f0cff8a69b4ab6a2f63fb7386defa3?tpId=389&tqId=11211865&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "基础算法",
+    "sub": "简单库函数数据结构"
+  },
+  {
+    "num": "BISHI9",
+    "title": "田忌赛马",
+    "diff": "入门-6",
+    "count": "12197",
+    "href": "https://www.nowcoder.com/practice/49d799f65a0749588e9cd7e6135a4a9a?tpId=389&tqId=11141550&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "基础算法",
+    "sub": "暴力枚举"
+  },
+  {
+    "num": "BISHI10",
+    "title": "小红的字符串修改",
+    "diff": "入门-10",
+    "count": "5074",
+    "href": "https://www.nowcoder.com/practice/66e0054ff6b345afa47bcd4e8ceb72d7?tpId=389&tqId=11183285&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "基础算法",
+    "sub": "暴力枚举"
+  },
+  {
+    "num": "BISHI11",
+    "title": "变幻莫测",
+    "diff": null,
+    "count": "3734",
+    "href": "https://www.nowcoder.com/practice/5e702b6c7c114e64b5db4650d0ce0051?tpId=389&tqId=11255790&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "基础算法",
+    "sub": "暴力枚举"
+  },
+  {
+    "num": "BISHI12",
+    "title": "元素方碑",
+    "diff": "入门-11",
+    "count": "3369",
+    "href": "https://www.nowcoder.com/practice/5c6e7ed4726e41f4ac99a4dedf1e5bb2?tpId=389&tqId=11254465&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "基础算法",
+    "sub": "暴力枚举"
+  },
+  {
+    "num": "BISHI13",
+    "title": "九倍平方数",
+    "diff": null,
+    "count": "2723",
+    "href": "https://www.nowcoder.com/practice/032c72fab5fe4a2ea8e11d40378a493d?tpId=389&tqId=11254466&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "基础算法",
+    "sub": "暴力枚举"
+  },
+  {
+    "num": "BISHI14",
+    "title": "特殊的科学计数法",
+    "diff": "入门-9",
+    "count": "3731",
+    "href": "https://www.nowcoder.com/practice/ca0962879d3b40d8bb598fb9a905ac7a?tpId=389&tqId=11255789&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "基础算法",
+    "sub": "模拟"
+  },
+  {
+    "num": "BISHI15",
+    "title": "小红的夹吃棋",
+    "diff": "入门-7",
+    "count": "2563",
+    "href": "https://www.nowcoder.com/practice/94648fd37a644c76adb2adb29c2a3037?tpId=389&tqId=11255787&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "基础算法",
+    "sub": "模拟"
+  },
+  {
+    "num": "BISHI16",
+    "title": "计算一年中的第几天",
+    "diff": "入门-8",
+    "count": "4671",
+    "href": "https://www.nowcoder.com/practice/178aa3dafb144bb8b0445edb5e9b812a?tpId=389&tqId=145342&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "基础算法",
+    "sub": "模拟"
+  },
+  {
+    "num": "BISHI17",
+    "title": "纸牌游戏",
+    "diff": "入门-6",
+    "count": "2111",
+    "href": "https://www.nowcoder.com/practice/74f915e366094b19b94334de8b68e733?tpId=389&tqId=11254460&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "基础算法",
+    "sub": "模拟"
+  },
+  {
+    "num": "BISHI18",
+    "title": "多项式输出",
+    "diff": "入门-10",
+    "count": "2007",
+    "href": "https://www.nowcoder.com/practice/142ee43d3e7345d385328faca9f636e5?tpId=389&tqId=11102358&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "基础算法",
+    "sub": "模拟"
+  },
+  {
+    "num": "BISHI19",
+    "title": "乒乓球",
+    "diff": "入门-8",
+    "count": "1948",
+    "href": "https://www.nowcoder.com/practice/78660925b1cd49b6b2e43cb375ed7945?tpId=389&tqId=10868166&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "基础算法",
+    "sub": "模拟"
+  },
+  {
+    "num": "BISHI20",
+    "title": "回文日期",
+    "diff": null,
+    "count": "2857",
+    "href": "https://www.nowcoder.com/practice/0372242deac541d0b578cc6563395681?tpId=389&tqId=11102676&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "基础算法",
+    "sub": "模拟"
+  },
+  {
+    "num": "BISHI21",
+    "title": "【模板】排序",
+    "diff": "入门-6",
+    "count": "7515",
+    "href": "https://www.nowcoder.com/practice/40bf74658879460bbf5f1bfe772e8580?tpId=389&tqId=2032996&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "基础算法",
+    "sub": "排序"
+  },
+  {
+    "num": "BISHI22",
+    "title": "分数线划定",
+    "diff": "入门-8",
+    "count": "4584",
+    "href": "https://www.nowcoder.com/practice/2395fa7b6c6e452e8d8310a7cfdbe902?tpId=389&tqId=2641422&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "基础算法",
+    "sub": "排序"
+  },
+  {
+    "num": "BISHI23",
+    "title": "小红书推荐系统",
+    "diff": "入门-9",
+    "count": "3319",
+    "href": "https://www.nowcoder.com/practice/e5b39c9034a84bf2a5e026b2b9b973d0?tpId=389&tqId=10616263&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "基础算法",
+    "sub": "排序"
+  },
+  {
+    "num": "BISHI24",
+    "title": "谐距下标对",
+    "diff": "入门-10",
+    "count": "2812",
+    "href": "https://www.nowcoder.com/practice/12fd032361704c978bcb9c2c2b3bb93d?tpId=389&tqId=11254502&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "基础算法",
+    "sub": "桶思想"
+  },
+  {
+    "num": "BISHI25",
+    "title": "最大 FST 距离",
+    "diff": null,
+    "count": "2848",
+    "href": "https://www.nowcoder.com/practice/6295f81acd1b4fb59c8beed92577f64b?tpId=389&tqId=134604&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "基础算法",
+    "sub": "桶思想"
+  },
+  {
+    "num": "BISHI26",
+    "title": "构造C的歪",
+    "diff": "入门-4",
+    "count": "12663",
+    "href": "https://www.nowcoder.com/practice/56735b3fe2fc4ed5916f5427dc787156?tpId=389&tqId=11087572&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "基础算法",
+    "sub": "构造"
+  },
+  {
+    "num": "BISHI27",
+    "title": "构造数对",
+    "diff": "入门-6",
+    "count": "1091",
+    "href": "https://www.nowcoder.com/practice/c16b86c1149a43eaaa0fd85aaee51290?tpId=389&tqId=11254477&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "基础算法",
+    "sub": "构造"
+  },
+  {
+    "num": "BISHI28",
+    "title": "构造数独",
+    "diff": "入门-7",
+    "count": "1585",
+    "href": "https://www.nowcoder.com/practice/bf8ffcbf95f743d7bbb2dd96bafa1a3c?tpId=389&tqId=11254473&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "基础算法",
+    "sub": "构造"
+  },
+  {
+    "num": "BISHI29",
+    "title": "小红的排列构造①",
+    "diff": "入门-9",
+    "count": "2110",
+    "href": "https://www.nowcoder.com/practice/2b0a9318cc0740d1a78eec06162e7bea?tpId=389&tqId=10097249&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "基础算法",
+    "sub": "构造"
+  },
+  {
+    "num": "BISHI30",
+    "title": "二进制数1",
+    "diff": "入门-5",
+    "count": "4945",
+    "href": "https://www.nowcoder.com/practice/bc4c7936f5ed42cbb9131b6f39aa272b?tpId=389&tqId=365882&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "基础算法",
+    "sub": "位运算"
+  },
+  {
+    "num": "BISHI31",
+    "title": "二进制不同位数",
+    "diff": "入门-6",
+    "count": "3634",
+    "href": "https://www.nowcoder.com/practice/daf9032926614dab91ca624a7759a868?tpId=389&tqId=314260&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "基础算法",
+    "sub": "位运算"
+  },
+  {
+    "num": "BISHI32",
+    "title": "被打乱的异或和",
+    "diff": "入门-6",
+    "count": "1551",
+    "href": "https://www.nowcoder.com/practice/116db6858c424fb89b821125053bbc15?tpId=389&tqId=11255661&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "基础算法",
+    "sub": "位运算"
+  },
+  {
+    "num": "BISHI33",
+    "title": "Poi 的新加法（Easy Version）",
+    "diff": "入门-10",
+    "count": null,
+    "href": "https://www.nowcoder.com/practice/9f766daa7e4042a786633c341fe9d7e2?tpId=389&tqId=11211855&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "基础算法",
+    "sub": "位运算"
+  },
+  {
+    "num": "BISHI34",
+    "title": "甜蜜的博弈",
+    "diff": "入门-10",
+    "count": "629",
+    "href": "https://www.nowcoder.com/practice/d3934f2d05624c8fa1a748ef225d0460?tpId=389&tqId=11293438&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "基础算法",
+    "sub": "博弈论"
+  },
+  {
+    "num": "BISHI35",
+    "title": "【模板】巴什博弈",
+    "diff": "入门-8",
+    "count": "1579",
+    "href": "https://www.nowcoder.com/practice/9bb882504d574ec287f69e967ce0fb95?tpId=389&tqId=11087259&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "基础算法",
+    "sub": "博弈论"
+  },
+  {
+    "num": "BISHI36",
+    "title": "【模板】扩展巴什博弈",
+    "diff": null,
+    "count": "1125",
+    "href": "https://www.nowcoder.com/practice/4b0d36a3d3884cf69f618cf4c2511d82?tpId=389&tqId=11093714&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "基础算法",
+    "sub": "博弈论"
+  },
+  {
+    "num": "BISHI37",
+    "title": "数位差与数值和的构造",
+    "diff": "入门-10",
+    "count": "393",
+    "href": "https://www.nowcoder.com/practice/36f3593e553c4c67987abf88a3d4d105?tpId=389&tqId=11294592&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "基础算法",
+    "sub": "随机化"
+  },
+  {
+    "num": "BISHI38",
+    "title": "有向二分图构造",
+    "diff": null,
+    "count": "216",
+    "href": "https://www.nowcoder.com/practice/e56757bb703b4cee9d641d1682b54b63?tpId=389&tqId=11294607&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "基础算法",
+    "sub": "随机化"
+  },
+  {
+    "num": "BISHI39",
+    "title": "【模板】Pollard-Pho算法",
+    "diff": null,
+    "count": "480",
+    "href": "https://www.nowcoder.com/practice/9da360a56fa846708542b0fb3985c647?tpId=389&tqId=11294664&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "基础算法",
+    "sub": "随机化"
+  },
+  {
+    "num": "BISHI40",
+    "title": "数组取精",
+    "diff": null,
+    "count": "219",
+    "href": "https://www.nowcoder.com/practice/6f77d207b40c41d899d23627d6bd122a?tpId=389&tqId=11294669&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "基础算法",
+    "sub": "随机化"
+  },
+  {
+    "num": "BISHI41",
+    "title": "【模板】整除分块",
+    "diff": null,
+    "count": "452",
+    "href": "https://www.nowcoder.com/practice/6b0b510b32484281bd21abb71ef7ba0b?tpId=389&tqId=11297128&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "基础算法",
+    "sub": "整除分块"
+  },
+  {
+    "num": "BISHI42",
+    "title": "余数求和",
+    "diff": null,
+    "count": "323",
+    "href": "https://www.nowcoder.com/practice/5d18ffe2c6cd45ac8d8040be19c96f14?tpId=389&tqId=11297233&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "基础算法",
+    "sub": "整除分块"
+  },
+  {
+    "num": "BISHI43",
+    "title": "讨厌鬼进货",
+    "diff": "入门-6",
+    "count": "4259",
+    "href": "https://www.nowcoder.com/practice/e364bac751204aa0b2d27389ca8e3c94?tpId=389&tqId=11255785&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "贪心算法",
+    "sub": "简单贪心"
+  },
+  {
+    "num": "BISHI44",
+    "title": "灵异背包？",
+    "diff": "入门-7",
+    "count": "6900",
+    "href": "https://www.nowcoder.com/practice/812bcedbbe244c9b86e459a244af5ddf?tpId=389&tqId=10733211&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "贪心算法",
+    "sub": "简单贪心"
+  },
+  {
+    "num": "BISHI45",
+    "title": "小红的矩阵染色",
+    "diff": null,
+    "count": "1822",
+    "href": "https://www.nowcoder.com/practice/dcbaf862c0e046d79e9cd297abd76bcf?tpId=389&tqId=11255786&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "贪心算法",
+    "sub": "简单贪心"
+  },
+  {
+    "num": "BISHI46",
+    "title": "小红的魔法药剂",
+    "diff": "入门-7",
+    "count": "2367",
+    "href": "https://www.nowcoder.com/practice/1ede2daa3ab445bc8ac8ea62b6ca8201?tpId=389&tqId=11255783&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "贪心算法",
+    "sub": "简单贪心"
+  },
+  {
+    "num": "BISHI47",
+    "title": "交换到最大",
+    "diff": null,
+    "count": "1584",
+    "href": "https://www.nowcoder.com/practice/73fd35bbfaa5483d8aa8b03cd27887a8?tpId=389&tqId=11254470&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "贪心算法",
+    "sub": "简单贪心"
+  },
+  {
+    "num": "BISHI48",
+    "title": "小红的整数配对",
+    "diff": null,
+    "count": "1865",
+    "href": "https://www.nowcoder.com/practice/66b9810e4fe34956a8d1f5c67aacc6dc?tpId=389&tqId=11255781&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "贪心算法",
+    "sub": "简单贪心"
+  },
+  {
+    "num": "BISHI49",
+    "title": "小红闯关",
+    "diff": null,
+    "count": "1869",
+    "href": "https://www.nowcoder.com/practice/7ce4b75f7a304be481e73bc4dd2705a4?tpId=389&tqId=11183290&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "贪心算法",
+    "sub": "简单贪心"
+  },
+  {
+    "num": "BISHI50",
+    "title": "[JSOI2007]建筑抢修",
+    "diff": "入门-0",
+    "count": "457",
+    "href": "https://www.nowcoder.com/practice/e69a484a4dfb4015b34c2e0ff2ae2ac8?tpId=389&tqId=11306689&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "贪心算法",
+    "sub": "贪心进阶"
+  },
+  {
+    "num": "BISHI51",
+    "title": "低买高卖",
+    "diff": null,
+    "count": "428",
+    "href": "https://www.nowcoder.com/practice/61ad3cbe0e7d4db9b64fc2b7b503dfd8?tpId=389&tqId=11298806&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "贪心算法",
+    "sub": "贪心进阶"
+  },
+  {
+    "num": "BISHI52",
+    "title": "奥赛组队",
+    "diff": null,
+    "count": "169",
+    "href": "https://www.nowcoder.com/practice/8809c78fe4fa445ab8218cee5b69910f?tpId=389&tqId=11298813&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "贪心算法",
+    "sub": "贪心进阶"
+  },
+  {
+    "num": "BISHI53",
+    "title": "[P1080] 国王游戏(简化版)",
+    "diff": "入门-0",
+    "count": "546",
+    "href": "https://www.nowcoder.com/practice/145c3426577f40f8b2b5e51ca6f61523?tpId=389&tqId=11306758&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "贪心算法",
+    "sub": "贪心进阶"
+  },
+  {
+    "num": "BISHI54",
+    "title": "货物堆放",
+    "diff": null,
+    "count": "211",
+    "href": "https://www.nowcoder.com/practice/22541f98215747aeb0b8217ae1dd97e8?tpId=389&tqId=11298826&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "贪心算法",
+    "sub": "贪心进阶"
+  },
+  {
+    "num": "BISHI55",
+    "title": "判断质数",
+    "diff": "入门-7",
+    "count": "2737",
+    "href": "https://www.nowcoder.com/practice/9f418ff48b5e4e879f398352bed6118d?tpId=389&tqId=11254600&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "数学算法",
+    "sub": "简单数论"
+  },
+  {
+    "num": "BISHI56",
+    "title": "分解质因数",
+    "diff": "入门-7",
+    "count": "2234",
+    "href": "https://www.nowcoder.com/practice/35723516d6f841ca8869ecbcf3ddacaf?tpId=389&tqId=11224914&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "数学算法",
+    "sub": "简单数论"
+  },
+  {
+    "num": "BISHI57",
+    "title": "最大公因数与最小公倍数",
+    "diff": "入门-6",
+    "count": "1518",
+    "href": "https://www.nowcoder.com/practice/ee732bec4f174cd9b4abc6427ba90584?tpId=389&tqId=11254607&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "数学算法",
+    "sub": "简单数论"
+  },
+  {
+    "num": "BISHI58",
+    "title": "矩形游戏",
+    "diff": null,
+    "count": "866",
+    "href": "https://www.nowcoder.com/practice/5b6c2c824a434b55a5e3b77619c54a90?tpId=389&tqId=11254735&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "数学算法",
+    "sub": "简单数论"
+  },
+  {
+    "num": "BISHI59",
+    "title": "阶乘末尾非零数字",
+    "diff": "入门-10",
+    "count": "1527",
+    "href": "https://www.nowcoder.com/practice/248c8fbee56e491aa147b67b9c082da0?tpId=389&tqId=354347&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "数学算法",
+    "sub": "模运算性质、递归与快速幂"
+  },
+  {
+    "num": "BISHI60",
+    "title": "大水题",
+    "diff": "入门-0",
+    "count": "1321",
+    "href": "https://www.nowcoder.com/practice/6b9770de551c426287252421742f6ebf?tpId=389&tqId=11264989&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "数学算法",
+    "sub": "模运算性质、递归与快速幂"
+  },
+  {
+    "num": "BISHI61",
+    "title": "小q的数列",
+    "diff": "入门-10",
+    "count": "713",
+    "href": "https://www.nowcoder.com/practice/8ea1e0d996f64e15961ae42e658a04a7?tpId=389&tqId=11264990&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "数学算法",
+    "sub": "模运算性质、递归与快速幂"
+  },
+  {
+    "num": "BISHI62",
+    "title": "斐波那契数列",
+    "diff": "入门-9",
+    "count": "2587",
+    "href": "https://www.nowcoder.com/practice/c245af6cfdce49ceb5435f649ee14f89?tpId=389&tqId=314234&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "数学算法",
+    "sub": "模运算性质、递归与快速幂"
+  },
+  {
+    "num": "BISHI63",
+    "title": "计算阶乘",
+    "diff": "入门-6",
+    "count": "775",
+    "href": "https://www.nowcoder.com/practice/b93729ad46d74a62801bdc320be2aa8e?tpId=389&tqId=11261732&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "数学算法",
+    "sub": "模运算性质、递归与快速幂"
+  },
+  {
+    "num": "BISHI64",
+    "title": "【模板】快速幂Ⅰ ‖ 整数",
+    "diff": "入门-8",
+    "count": "1216",
+    "href": "https://www.nowcoder.com/practice/3d624107a6904da1bd0e8c9c85e17167?tpId=389&tqId=11079132&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "数学算法",
+    "sub": "模运算性质、递归与快速幂"
+  },
+  {
+    "num": "BISHI65",
+    "title": "【模板】分数取模",
+    "diff": "入门-10",
+    "count": "622",
+    "href": "https://www.nowcoder.com/practice/23839ef20d5f4dbaa9664daa51864291?tpId=389&tqId=11265415&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "数学算法",
+    "sub": "模运算性质、递归与快速幂"
+  },
+  {
+    "num": "BISHI66",
+    "title": "子数列求积",
+    "diff": null,
+    "count": "973",
+    "href": "https://www.nowcoder.com/practice/5daab034da954f5697dcf96c1808d34f?tpId=389&tqId=11262447&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "数学算法",
+    "sub": "模运算性质、递归与快速幂"
+  },
+  {
+    "num": "BISHI67",
+    "title": "穿搭大挑战",
+    "diff": "入门-6",
+    "count": "793",
+    "href": "https://www.nowcoder.com/practice/cd190da0f3614a8393c84981a11d024e?tpId=389&tqId=11262052&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "数学算法",
+    "sub": "组合数学"
+  },
+  {
+    "num": "BISHI68",
+    "title": "刷题统计",
+    "diff": "入门-8",
+    "count": "1180",
+    "href": "https://www.nowcoder.com/practice/99ddb1a6e71d47dcbbe4f272aba532b8?tpId=389&tqId=11262076&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "数学算法",
+    "sub": "组合数学"
+  },
+  {
+    "num": "BISHI69",
+    "title": "[HNOI2008]越狱",
+    "diff": null,
+    "count": "482",
+    "href": "https://www.nowcoder.com/practice/33d5016548d84cbe8cdb08ca0c13c2f1?tpId=389&tqId=11264992&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "数学算法",
+    "sub": "组合数学"
+  },
+  {
+    "num": "BISHI70",
+    "title": "【模板】组合数",
+    "diff": null,
+    "count": "963",
+    "href": "https://www.nowcoder.com/practice/53f82db091b2452bae5fef4437ffd0bb?tpId=389&tqId=11262469&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "数学算法",
+    "sub": "组合数学"
+  },
+  {
+    "num": "BISHI71",
+    "title": "人员分组问题",
+    "diff": null,
+    "count": "336",
+    "href": "https://www.nowcoder.com/practice/482f31bf028f46aa9b7882a4b921ffcf?tpId=389&tqId=11262484&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "数学算法",
+    "sub": "组合数学"
+  },
+  {
+    "num": "BISHI72",
+    "title": "中位数之和",
+    "diff": null,
+    "count": "662",
+    "href": "https://www.nowcoder.com/practice/4bc8c3535b8e488eb608c73f8946d9cb?tpId=389&tqId=11263563&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "数学算法",
+    "sub": "组合数学"
+  },
+  {
+    "num": "BISHI73",
+    "title": "【模板】欧拉函数Ⅰ ‖ 单个整数",
+    "diff": "入门-11",
+    "count": "167",
+    "href": "https://www.nowcoder.com/practice/6a22f91ad3904c6cbd624ae5ff6a4eac?tpId=389&tqId=11079274&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "数学算法",
+    "sub": "高级数论"
+  },
+  {
+    "num": "BISHI74",
+    "title": "【模板】非质模数下的乘法逆元",
+    "diff": null,
+    "count": "365",
+    "href": "https://www.nowcoder.com/practice/52328883c41f475c8eb228726af2ce2f?tpId=389&tqId=11298682&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "数学算法",
+    "sub": "高级数论"
+  },
+  {
+    "num": "BISHI75",
+    "title": "【模板】欧拉降幂",
+    "diff": null,
+    "count": "68",
+    "href": "https://www.nowcoder.com/practice/da7a14c1a58b48bd80e63771b82e50c5?tpId=389&tqId=11298685&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "数学算法",
+    "sub": "高级数论"
+  },
+  {
+    "num": "BISHI76",
+    "title": "迷宫寻路",
+    "diff": "入门-7",
+    "count": "3037",
+    "href": "https://www.nowcoder.com/practice/0c8930e517444d04b426e9703d483ed4?tpId=389&tqId=11262526&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "搜索算法",
+    "sub": "dfs"
+  },
+  {
+    "num": "BISHI77",
+    "title": "数水坑",
+    "diff": "入门-9",
+    "count": "2210",
+    "href": "https://www.nowcoder.com/practice/664ca4289fcf457ba3109fdf4a7a1a05?tpId=389&tqId=11262528&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "搜索算法",
+    "sub": "dfs"
+  },
+  {
+    "num": "BISHI78",
+    "title": "全排列",
+    "diff": "入门-6",
+    "count": "2360",
+    "href": "https://www.nowcoder.com/practice/1d1fe38275da44b5848add89f9e223b1?tpId=389&tqId=11263581&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "搜索算法",
+    "sub": "dfs"
+  },
+  {
+    "num": "BISHI79",
+    "title": "取数游戏",
+    "diff": null,
+    "count": "1882",
+    "href": "https://www.nowcoder.com/practice/b002b8eb564245fdbb8a02db8dcf03e4?tpId=389&tqId=11262529&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "搜索算法",
+    "sub": "dfs"
+  },
+  {
+    "num": "BISHI80",
+    "title": "走迷宫",
+    "diff": "入门-9",
+    "count": "5052",
+    "href": "https://www.nowcoder.com/practice/e88b41dc6e764b2893bc4221777ffe64?tpId=389&tqId=2373924&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "搜索算法",
+    "sub": "bfs"
+  },
+  {
+    "num": "BISHI81",
+    "title": "剪纸游戏",
+    "diff": null,
+    "count": "2880",
+    "href": "https://www.nowcoder.com/practice/33054daa2cc04fd6b97a0d18ccfc66a0?tpId=389&tqId=10809950&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "搜索算法",
+    "sub": "bfs"
+  },
+  {
+    "num": "BISHI82",
+    "title": "没挡住洪水",
+    "diff": null,
+    "count": "772",
+    "href": "https://www.nowcoder.com/practice/6d62436fda5f4ef997e68d1ce1dd6eb2?tpId=389&tqId=11262542&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "搜索算法",
+    "sub": "bfs"
+  },
+  {
+    "num": "BISHI83",
+    "title": "迷宫问题",
+    "diff": "入门-11",
+    "count": "54461",
+    "href": "https://www.nowcoder.com/practice/cf24906056f4488c9ddb132f317e03bc?tpId=389&tqId=36867&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "搜索算法",
+    "sub": "bfs"
+  },
+  {
+    "num": "BISHI84",
+    "title": "时津风的资源收集",
+    "diff": null,
+    "count": "2384",
+    "href": "https://www.nowcoder.com/practice/5a6f83a0e0214ba5a77f6cdc71a3027b?tpId=389&tqId=10492566&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "搜索算法",
+    "sub": "bfs"
+  },
+  {
+    "num": "BISHI85",
+    "title": "【模板】整数域二分",
+    "diff": "入门-8",
+    "count": "964",
+    "href": "https://www.nowcoder.com/practice/d483ab6bf19245518730a75c6ea108ae?tpId=389&tqId=11265001&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "搜索算法",
+    "sub": "二分"
+  },
+  {
+    "num": "BISHI86",
+    "title": "圆覆盖",
+    "diff": "入门-11",
+    "count": "1074",
+    "href": "https://www.nowcoder.com/practice/4f96afe5dfe74dad88dbe419d33f9536?tpId=389&tqId=10816598&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "搜索算法",
+    "sub": "二分"
+  },
+  {
+    "num": "BISHI87",
+    "title": "[CQOI2010]扑克牌",
+    "diff": null,
+    "count": "285",
+    "href": "https://www.nowcoder.com/practice/b77ff162bbab446993913fd684489cde?tpId=389&tqId=11265004&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "搜索算法",
+    "sub": "二分"
+  },
+  {
+    "num": "BISHI88",
+    "title": "小苯的魔法染色",
+    "diff": "入门-0",
+    "count": "972",
+    "href": "https://www.nowcoder.com/practice/2e27509b990d4d02a70c0f208f078cdf?tpId=389&tqId=11142889&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "搜索算法",
+    "sub": "二分"
+  },
+  {
+    "num": "BISHI89",
+    "title": "山峰数组计数",
+    "diff": null,
+    "count": "1680",
+    "href": "https://www.nowcoder.com/practice/aac1989d183d4e6daf6ee2e1ca62b50c?tpId=389&tqId=10939933&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "搜索算法",
+    "sub": "二分"
+  },
+  {
+    "num": "BISHI90",
+    "title": "【模板】记忆化搜索",
+    "diff": null,
+    "count": "240",
+    "href": "https://www.nowcoder.com/practice/211c9fa6ea984185a16c6005e9793736?tpId=389&tqId=11294976&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "搜索算法",
+    "sub": "记忆化搜索与剪枝"
+  },
+  {
+    "num": "BISHI91",
+    "title": "拼接木棍",
+    "diff": null,
+    "count": "116",
+    "href": "https://www.nowcoder.com/practice/e0f5370bf8bb4d7d9c89c832c30da460?tpId=389&tqId=11295006&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "搜索算法",
+    "sub": "记忆化搜索与剪枝"
+  },
+  {
+    "num": "BISHI92",
+    "title": "【模板】前缀函数（kmp）",
+    "diff": null,
+    "count": "229",
+    "href": "https://www.nowcoder.com/practice/f347bf9d731d47a0bc87bc7e2415cef1?tpId=389&tqId=11086840&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "搜索算法",
+    "sub": "字符串匹配算法"
+  },
+  {
+    "num": "BISHI93",
+    "title": "【模板】Trie 字典树",
+    "diff": null,
+    "count": "166",
+    "href": "https://www.nowcoder.com/practice/feed1cd7546a4901965751b9fbf5f8a1?tpId=389&tqId=11298876&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "搜索算法",
+    "sub": "字符串匹配算法"
+  },
+  {
+    "num": "BISHI94",
+    "title": "【模板】马拉车算法",
+    "diff": null,
+    "count": "112",
+    "href": "https://www.nowcoder.com/practice/c01a7b5e88e544db841a009a035bd125?tpId=389&tqId=11298883&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "搜索算法",
+    "sub": "字符串匹配算法"
+  },
+  {
+    "num": "BISHI95",
+    "title": "【模板】链式前向星",
+    "diff": "入门-8",
+    "count": "668",
+    "href": "https://www.nowcoder.com/practice/23f622c8b15f4b37bffe1a986eeea185?tpId=389&tqId=11262219&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "树图算法",
+    "sub": "树图基础"
+  },
+  {
+    "num": "BISHI96",
+    "title": "先序遍历、中序遍历和后序遍历",
+    "diff": null,
+    "count": "958",
+    "href": "https://www.nowcoder.com/practice/15fdb346838545d0b272e43957e1cb2a?tpId=389&tqId=11262247&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "树图算法",
+    "sub": "树图基础"
+  },
+  {
+    "num": "BISHI97",
+    "title": "旺仔哥哥走迷宫",
+    "diff": "入门-10",
+    "count": "753",
+    "href": "https://www.nowcoder.com/practice/4b4ee516c23d4bd2b838646363b5c395?tpId=389&tqId=11262357&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "树图算法",
+    "sub": "树图基础"
+  },
+  {
+    "num": "BISHI98",
+    "title": "谍中谍中谍中谍中谍...",
+    "diff": "入门-9",
+    "count": "318",
+    "href": "https://www.nowcoder.com/practice/ee1246384c9b4066b67043ebb37fd9c9?tpId=389&tqId=11262589&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "树图算法",
+    "sub": "树图基础"
+  },
+  {
+    "num": "BISHI99",
+    "title": "我朋友的朋友不是我的朋友",
+    "diff": null,
+    "count": "254",
+    "href": "https://www.nowcoder.com/practice/9656866233614f4191f5555a0cdcae4b?tpId=389&tqId=11262299&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "树图算法",
+    "sub": "树图基础"
+  },
+  {
+    "num": "BISHI100",
+    "title": "二分图判定",
+    "diff": "入门-11",
+    "count": "964",
+    "href": "https://www.nowcoder.com/practice/f4b8d0481c7b4278b9b406b636e3c7db?tpId=389&tqId=318603&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "树图算法",
+    "sub": "树图基础"
+  },
+  {
+    "num": "BISHI101",
+    "title": "世界树上找米库",
+    "diff": null,
+    "count": "1526",
+    "href": "https://www.nowcoder.com/practice/9dd512f784b24ece85c81600aa3bc06c?tpId=389&tqId=11235224&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "树图算法",
+    "sub": "树图基础"
+  },
+  {
+    "num": "BISHI102",
+    "title": "【模板】并查集",
+    "diff": null,
+    "count": "575",
+    "href": "https://www.nowcoder.com/practice/513111e4477c4fad8f19f14d4cdf49dc?tpId=389&tqId=11077218&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "树图算法",
+    "sub": "并查集"
+  },
+  {
+    "num": "BISHI103",
+    "title": "【模板】有依赖的背包问题",
+    "diff": null,
+    "count": "200",
+    "href": "https://www.nowcoder.com/practice/f0a110f831de4cc6bebc6243a26166e6?tpId=389&tqId=11294686&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "树图算法",
+    "sub": "并查集"
+  },
+  {
+    "num": "BISHI104",
+    "title": "修复公路",
+    "diff": null,
+    "count": "225",
+    "href": "https://www.nowcoder.com/practice/8111efc8c04d472da349b6e5010e1951?tpId=389&tqId=11294690&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "树图算法",
+    "sub": "并查集"
+  },
+  {
+    "num": "BISHI105",
+    "title": "【模板】单源最短路Ⅰ ‖ 无权图",
+    "diff": "入门-11",
+    "count": "679",
+    "href": "https://www.nowcoder.com/practice/359e14832ce1476fadc70dd4bc36b991?tpId=389&tqId=11073984&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "树图算法",
+    "sub": "最短路与生成树"
+  },
+  {
+    "num": "BISHI106",
+    "title": "【模板】单源最短路Ⅲ ‖ 非负权图",
+    "diff": null,
+    "count": "609",
+    "href": "https://www.nowcoder.com/practice/d7fafd4f3340439e90597532850257b5?tpId=389&tqId=11074139&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "树图算法",
+    "sub": "最短路与生成树"
+  },
+  {
+    "num": "BISHI107",
+    "title": "【模板】最小生成树",
+    "diff": null,
+    "count": "553",
+    "href": "https://www.nowcoder.com/practice/6434142fe980434899c396a6124b0778?tpId=389&tqId=11077677&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "树图算法",
+    "sub": "最短路与生成树"
+  },
+  {
+    "num": "BISHI108",
+    "title": "最优乘车",
+    "diff": null,
+    "count": "113",
+    "href": "https://www.nowcoder.com/practice/83101a4f624042b59a629089e83b6dd1?tpId=389&tqId=11306684&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "树图算法",
+    "sub": "最短路与生成树"
+  },
+  {
+    "num": "BISHI109",
+    "title": "邮递员送信",
+    "diff": null,
+    "count": "586",
+    "href": "https://www.nowcoder.com/practice/2b0c636cf77d441fa96d40ac64290d39?tpId=389&tqId=11298801&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "树图算法",
+    "sub": "最短路与生成树"
+  },
+  {
+    "num": "BISHI110",
+    "title": "【模板】静态区间和（前缀和）",
+    "diff": "入门-7",
+    "count": "2086",
+    "href": "https://www.nowcoder.com/practice/ac79a1a4a66646cc87525d6faa86e021?tpId=389&tqId=11078484&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "数据结构",
+    "sub": "前缀和与差分"
+  },
+  {
+    "num": "BISHI111",
+    "title": "【模板】差分",
+    "diff": "入门-8",
+    "count": "6081",
+    "href": "https://www.nowcoder.com/practice/4bbc401a5df140309edd6f14debdba42?tpId=389&tqId=2022327&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "数据结构",
+    "sub": "前缀和与差分"
+  },
+  {
+    "num": "BISHI112",
+    "title": "【模板】二维前缀和",
+    "diff": "入门-9",
+    "count": "7848",
+    "href": "https://www.nowcoder.com/practice/99eb8040d116414ea3296467ce81cbbc?tpId=389&tqId=2023819&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "数据结构",
+    "sub": "前缀和与差分"
+  },
+  {
+    "num": "BISHI113",
+    "title": "【模板】二维差分",
+    "diff": null,
+    "count": "3848",
+    "href": "https://www.nowcoder.com/practice/50e1a93989df42efb0b1dec386fb4ccc?tpId=389&tqId=2024519&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "数据结构",
+    "sub": "前缀和与差分"
+  },
+  {
+    "num": "BISHI114",
+    "title": "【模板】滑动窗口",
+    "diff": null,
+    "count": "1859",
+    "href": "https://www.nowcoder.com/practice/be419f584a3f4c5b818833f1ce856626?tpId=389&tqId=11264997&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "数据结构",
+    "sub": "双指针"
+  },
+  {
+    "num": "BISHI115",
+    "title": "可匹配子段计数",
+    "diff": null,
+    "count": "840",
+    "href": "https://www.nowcoder.com/practice/cfc8ae6269cd445d83686f12da66023c?tpId=389&tqId=11262597&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "数据结构",
+    "sub": "双指针"
+  },
+  {
+    "num": "BISHI116",
+    "title": "【模板】双指针",
+    "diff": null,
+    "count": "1321",
+    "href": "https://www.nowcoder.com/practice/a2fd81391e1e4177aa6d506da895381b?tpId=389&tqId=11264996&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "数据结构",
+    "sub": "双指针"
+  },
+  {
+    "num": "BISHI117",
+    "title": "小苯的IDE括号问题（easy）",
+    "diff": null,
+    "count": "1138",
+    "href": "https://www.nowcoder.com/practice/0a526c7863474220aaef082ab5f2a00a?tpId=389&tqId=11264998&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "数据结构",
+    "sub": "双指针"
+  },
+  {
+    "num": "BISHI118",
+    "title": "相差不超过k的最多数",
+    "diff": "入门-10",
+    "count": "3216",
+    "href": "https://www.nowcoder.com/practice/562630ca90ac40ce89443c91060574c6?tpId=389&tqId=2403293&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "数据结构",
+    "sub": "双指针"
+  },
+  {
+    "num": "BISHI119",
+    "title": "小红的01子序列构造（easy）",
+    "diff": null,
+    "count": "2648",
+    "href": "https://www.nowcoder.com/practice/ee0b6c6baa2642c182df8b4390126f9a?tpId=389&tqId=11105316&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "数据结构",
+    "sub": "双指针"
+  },
+  {
+    "num": "BISHI120",
+    "title": "？？？",
+    "diff": "入门-10",
+    "count": "919",
+    "href": "https://www.nowcoder.com/practice/b6b8bfcde03841e4880c2b9ef00329c6?tpId=389&tqId=11263572&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "数据结构",
+    "sub": "双指针"
+  },
+  {
+    "num": "BISHI121",
+    "title": "数列后缀极大位置统计",
+    "diff": null,
+    "count": "415",
+    "href": "https://www.nowcoder.com/practice/9b791983564d4ad9a1bf298670562c68?tpId=389&tqId=11294370&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "数据结构",
+    "sub": "单调栈和单调队列"
+  },
+  {
+    "num": "BISHI122",
+    "title": "区间后缀极大位置计数",
+    "diff": null,
+    "count": "116",
+    "href": "https://www.nowcoder.com/practice/90f3f5e037264fae88b02918d07d7235?tpId=389&tqId=11294422&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "数据结构",
+    "sub": "单调栈和单调队列"
+  },
+  {
+    "num": "BISHI123",
+    "title": "环形字符串跃迁",
+    "diff": null,
+    "count": "82",
+    "href": "https://www.nowcoder.com/practice/84c36745b9984c25839bdc36f7f83339?tpId=389&tqId=11295126&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "数据结构",
+    "sub": "倍增/lca与ST表"
+  },
+  {
+    "num": "BISHI124",
+    "title": "【模板】最近公共祖先（LCA）",
+    "diff": null,
+    "count": "515",
+    "href": "https://www.nowcoder.com/practice/8004903f8eff4473b5c590b85afd7217?tpId=389&tqId=11296859&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "数据结构",
+    "sub": "倍增/lca与ST表"
+  },
+  {
+    "num": "BISHI125",
+    "title": "【模板】静态区间最值",
+    "diff": null,
+    "count": "661",
+    "href": "https://www.nowcoder.com/practice/831a314449d44ea0b1db90ca626bcd1a?tpId=389&tqId=11078067&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "数据结构",
+    "sub": "倍增/lca与ST表"
+  },
+  {
+    "num": "BISHI126",
+    "title": "【模板】动态区间和Ⅱ ‖ 区间修改 + 区间查询",
+    "diff": null,
+    "count": null,
+    "href": "https://www.nowcoder.com/practice/ef7a50cf0377447b9b435b0f95e48e70?tpId=389&tqId=11078464&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "数据结构",
+    "sub": "高级数据结构"
+  },
+  {
+    "num": "BISHI127",
+    "title": "区间根号与区间求和",
+    "diff": null,
+    "count": "57",
+    "href": "https://www.nowcoder.com/practice/56547df6934f4048a80ec75838d60c8f?tpId=389&tqId=11298441&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "数据结构",
+    "sub": "高级数据结构"
+  },
+  {
+    "num": "BISHI128",
+    "title": "区间加乘与单点求值",
+    "diff": null,
+    "count": "47",
+    "href": "https://www.nowcoder.com/practice/7a1de22fa7a1456f8ba519f21de31c84?tpId=389&tqId=11298445&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "数据结构",
+    "sub": "高级数据结构"
+  },
+  {
+    "num": "BISHI129",
+    "title": "区间增量与区间小于计数",
+    "diff": null,
+    "count": "381",
+    "href": "https://www.nowcoder.com/practice/74481dd14e3b4875a190952f86e6ffab?tpId=389&tqId=11298452&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "数据结构",
+    "sub": "高级数据结构"
+  },
+  {
+    "num": "BISHI130",
+    "title": "区间取反与区间数一",
+    "diff": null,
+    "count": "448",
+    "href": "https://www.nowcoder.com/practice/55d474a878a84f4b84dca4b177a8c45c?tpId=389&tqId=11298536&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "数据结构",
+    "sub": "高级数据结构"
+  },
+  {
+    "num": "BISHI131",
+    "title": "数楼梯",
+    "diff": "入门-7",
+    "count": "2750",
+    "href": "https://www.nowcoder.com/practice/c7e5f164fa5d471f8f83c90fe4ee3f05?tpId=389&tqId=11255462&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "动态规划",
+    "sub": "简单动态规划"
+  },
+  {
+    "num": "BISHI132",
+    "title": "小红的地砖",
+    "diff": "入门-7",
+    "count": "1898",
+    "href": "https://www.nowcoder.com/practice/8cd083c66a5f43489a532164e2a2304d?tpId=389&tqId=11255784&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "动态规划",
+    "sub": "简单动态规划"
+  },
+  {
+    "num": "BISHI133",
+    "title": "最长不下降子序列",
+    "diff": null,
+    "count": "1767",
+    "href": "https://www.nowcoder.com/practice/25da45d0d4fb4faba45094cbb0649062?tpId=389&tqId=11255450&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "动态规划",
+    "sub": "简单动态规划"
+  },
+  {
+    "num": "BISHI134",
+    "title": "最大子段和",
+    "diff": "入门-6",
+    "count": "1445",
+    "href": "https://www.nowcoder.com/practice/f04519cd1d904f50b68f4229a126ab08?tpId=389&tqId=10766281&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "动态规划",
+    "sub": "简单动态规划"
+  },
+  {
+    "num": "BISHI135",
+    "title": "三角形取数(Hard Version)",
+    "diff": null,
+    "count": null,
+    "href": "https://www.nowcoder.com/practice/ceea5825472940dabfec917ef93538e6?tpId=389&tqId=10625320&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "动态规划",
+    "sub": "简单动态规划"
+  },
+  {
+    "num": "BISHI136",
+    "title": "【模板】01背包",
+    "diff": "入门-10",
+    "count": "9363",
+    "href": "https://www.nowcoder.com/practice/fd55637d3f24484e96dad9e992d3f62e?tpId=389&tqId=2032484&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "动态规划",
+    "sub": "简单动态规划"
+  },
+  {
+    "num": "BISHI137",
+    "title": "【模板】完全背包",
+    "diff": "入门-11",
+    "count": "993",
+    "href": "https://www.nowcoder.com/practice/deda4293d9b24ce1aeaf1813c88b8c25?tpId=389&tqId=11267007&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "动态规划",
+    "sub": "进阶动态规划"
+  },
+  {
+    "num": "BISHI138",
+    "title": "【模板】多重背包",
+    "diff": null,
+    "count": "901",
+    "href": "https://www.nowcoder.com/practice/8fa10063d33a43dd9652c1511a34d461?tpId=389&tqId=11084563&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "动态规划",
+    "sub": "进阶动态规划"
+  },
+  {
+    "num": "BISHI139",
+    "title": "【模板】二维费用背包",
+    "diff": null,
+    "count": "497",
+    "href": "https://www.nowcoder.com/practice/84b88177894c4c82980017e6b4a15fb3?tpId=389&tqId=10613237&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "动态规划",
+    "sub": "进阶动态规划"
+  },
+  {
+    "num": "BISHI140",
+    "title": "【模板】分组背包",
+    "diff": null,
+    "count": "369",
+    "href": "https://www.nowcoder.com/practice/32a6c222213c42efa902da6b5c9f8e99?tpId=389&tqId=11262602&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "动态规划",
+    "sub": "进阶动态规划"
+  },
+  {
+    "num": "BISHI141",
+    "title": "来硬的",
+    "diff": null,
+    "count": "1138",
+    "href": "https://www.nowcoder.com/practice/08dbc77ec79942c1914b002f488b87ee?tpId=389&tqId=10864352&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "动态规划",
+    "sub": "进阶动态规划"
+  },
+  {
+    "num": "BISHI142",
+    "title": "最大学分",
+    "diff": null,
+    "count": "172",
+    "href": "https://www.nowcoder.com/practice/66403297dfe04faaacf7d0e905fea7ac?tpId=389&tqId=11262619&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "动态规划",
+    "sub": "进阶动态规划"
+  },
+  {
+    "num": "BISHI143",
+    "title": "没有上司的舞会",
+    "diff": null,
+    "count": "792",
+    "href": "https://www.nowcoder.com/practice/f703237089ee42d9b37e01d70e14e2fc?tpId=389&tqId=11265009&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "动态规划",
+    "sub": "进阶动态规划"
+  },
+  {
+    "num": "BISHI144",
+    "title": "食物链计数",
+    "diff": null,
+    "count": "535",
+    "href": "https://www.nowcoder.com/practice/9844dd9f531e46e29f5749e8fcc4bd0b?tpId=389&tqId=11262600&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "动态规划",
+    "sub": "进阶动态规划"
+  },
+  {
+    "num": "BISHI145",
+    "title": "石子合并",
+    "diff": null,
+    "count": "203",
+    "href": "https://www.nowcoder.com/practice/237337887b094938bfc6e9557f92c3e9?tpId=389&tqId=11262620&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "动态规划",
+    "sub": "进阶动态规划"
+  },
+  {
+    "num": "BISHI146",
+    "title": "收集金币",
+    "diff": null,
+    "count": "1956",
+    "href": "https://www.nowcoder.com/practice/bde230df252c4b41a059c9b06fcf65b6?tpId=389&tqId=11142111&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "动态规划",
+    "sub": "进阶动态规划"
+  },
+  {
+    "num": "BISHI147",
+    "title": "旅行者的大逃脱",
+    "diff": null,
+    "count": "315",
+    "href": "https://www.nowcoder.com/practice/3a02e2b818144c2dbad8dd3dc28d04cf?tpId=389&tqId=11023969&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AC%2594%25E9%259D%25A2%25E8%25AF%2595%25E7%25AF%2587%26topicId%3D389",
+    "top": "动态规划",
+    "sub": "进阶动态规划"
+  }
+]

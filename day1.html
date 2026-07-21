@@ -1,0 +1,942 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="color-scheme" content="light dark" />
+<title>Day 1 · 基础算法（上）— 牛客刷题训练营</title>
+<style>
+  :root{
+    --bg:#F2F4F7;
+    --surface:#FFFFFF;
+    --surface-alt:#E7EBEF;
+    --ink:#1B2430;
+    --ink-soft:#57626F;
+    --border:#D8DEE5;
+    --accent:#0E7C90;
+    --accent-ink:#FFFFFF;
+    --accent-warm:#9C6707;
+    --accent-warm-soft:#F3E6C8;
+    --ok:#1F8A4C;
+    --danger:#B23B27;
+    --shadow: 0 1px 2px rgba(20,30,40,.07), 0 10px 26px rgba(20,30,40,.07);
+    --font-display:'Cascadia Mono','JetBrains Mono','Consolas','SFMono-Regular',ui-monospace,monospace;
+    --font-body:'Segoe UI','PingFang SC','Microsoft YaHei','Noto Sans SC',system-ui,sans-serif;
+    --font-mono:'Cascadia Mono','JetBrains Mono','Consolas',ui-monospace,monospace;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#0F1720; --surface:#17212C; --surface-alt:#1E2A37;
+      --ink:#E7ECF2; --ink-soft:#9AA7B5; --border:#2A3746;
+      --accent:#22B8CF; --accent-ink:#08222A;
+      --accent-warm:#F2B705; --accent-warm-soft:#3A2E0C;
+      --ok:#3FBF6B; --danger:#E2695A;
+      --shadow: 0 1px 2px rgba(0,0,0,.35), 0 14px 32px rgba(0,0,0,.4);
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#0F1720; --surface:#17212C; --surface-alt:#1E2A37;
+    --ink:#E7ECF2; --ink-soft:#9AA7B5; --border:#2A3746;
+    --accent:#22B8CF; --accent-ink:#08222A;
+    --accent-warm:#F2B705; --accent-warm-soft:#3A2E0C;
+    --ok:#3FBF6B; --danger:#E2695A;
+    --shadow: 0 1px 2px rgba(0,0,0,.35), 0 14px 32px rgba(0,0,0,.4);
+  }
+  :root[data-theme="light"]{
+    --bg:#F2F4F7; --surface:#FFFFFF; --surface-alt:#E7EBEF;
+    --ink:#1B2430; --ink-soft:#57626F; --border:#D8DEE5;
+    --accent:#0E7C90; --accent-ink:#FFFFFF;
+    --accent-warm:#9C6707; --accent-warm-soft:#F3E6C8;
+    --ok:#1F8A4C; --danger:#B23B27;
+    --shadow: 0 1px 2px rgba(20,30,40,.07), 0 10px 26px rgba(20,30,40,.07);
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:var(--bg); color:var(--ink);
+    font-family:var(--font-body);
+    font-size:16px; line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:var(--accent);}
+  .container{max-width:860px;margin:0 auto;padding:0 20px 64px;}
+  header.topbar{
+    position:sticky; top:0; z-index:10;
+    background:color-mix(in srgb, var(--bg) 88%, transparent);
+    backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--border);
+  }
+  .topbar-inner{
+    max-width:860px;margin:0 auto;padding:14px 20px;
+    display:flex;flex-wrap:wrap;align-items:center;gap:10px 18px;
+  }
+  .topbar-titles{flex:1 1 260px;min-width:0;}
+  .topbar-titles h1{
+    font-family:var(--font-display);
+    font-size:1.18rem; margin:0; font-weight:700; letter-spacing:-0.01em;
+    text-wrap:balance;
+  }
+  .topbar-titles p{margin:2px 0 0; font-size:.85rem; color:var(--ink-soft);}
+  .topbar-nav{display:flex;gap:14px;font-size:.85rem;flex:0 0 auto;}
+  .topbar-nav a{text-decoration:none;font-weight:600;}
+  .topbar-nav a:hover{text-decoration:underline;}
+  .progress-wrap{flex:1 1 100%;display:flex;align-items:center;gap:10px;}
+  .progress-track{flex:1;height:8px;border-radius:5px;background:var(--surface-alt);overflow:hidden;}
+  .progress-fill{height:100%;background:var(--accent-warm);border-radius:5px;transition:width .3s ease;}
+  .progress-text{font-size:.78rem;color:var(--ink-soft);white-space:nowrap;font-variant-numeric:tabular-nums;}
+
+  main{padding-top:22px;}
+  .notice{
+    background:var(--accent-warm-soft);
+    border:1px solid color-mix(in srgb, var(--accent-warm) 35%, transparent);
+    border-radius:10px; padding:16px 18px; margin-bottom:26px;
+  }
+  .notice h2{margin:0 0 8px; font-size:1rem;}
+  .notice ol{margin:0 0 8px 1.1em; padding:0; font-size:.92rem;}
+  .notice li{margin:3px 0;}
+  .notice .fine{margin:0; font-size:.8rem; color:var(--ink-soft);}
+
+  h1.page-title{font-family:var(--font-display); font-size:1.5rem; margin:0 0 6px; text-wrap:balance;}
+
+  .topic-card{
+    background:var(--surface); border:1px solid var(--border); border-radius:12px;
+    padding:20px 22px; margin-bottom:22px; box-shadow:var(--shadow);
+  }
+  .topic-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-start;gap:8px 16px;margin-bottom:8px;}
+  .topic-head h2{font-size:1.08rem;margin:0;font-family:var(--font-display);font-weight:700;}
+  .topic-head-right{display:flex;align-items:center;gap:12px;flex-wrap:wrap;}
+  .badge{
+    font-size:.72rem;font-weight:600;letter-spacing:.02em;
+    background:var(--surface-alt);color:var(--ink-soft);
+    border-radius:5px;padding:3px 8px;white-space:nowrap;
+  }
+  .check{display:flex;align-items:center;gap:6px;font-size:.85rem;color:var(--ink-soft);cursor:pointer;user-select:none;}
+  .check input{accent-color:var(--accent-warm);width:16px;height:16px;cursor:pointer;}
+  .explain{font-size:.95rem;color:var(--ink-soft);margin:0 0 16px;max-width:65ch;}
+
+  .stage{background:var(--surface-alt);border-radius:10px;padding:14px;margin-bottom:14px;}
+  canvas{width:100%;display:block;border-radius:8px;background:#0F1720;}
+  .toolbar{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;margin-top:10px;}
+  .btn{
+    font-family:var(--font-body);font-size:.85rem;font-weight:600;
+    background:var(--surface);color:var(--ink);border:1px solid var(--border);
+    border-radius:7px;padding:6px 12px;cursor:pointer;
+  }
+  .btn:hover{border-color:var(--accent);}
+  .btn.play{background:var(--accent);color:var(--accent-ink);border-color:var(--accent);}
+  .btn:focus-visible, input:focus-visible, a:focus-visible{
+    outline:2px solid var(--accent);outline-offset:2px;
+  }
+  .speed-label{display:flex;align-items:center;gap:6px;font-size:.78rem;color:var(--ink-soft);}
+  .speed-label input{accent-color:var(--accent);}
+  .counter{margin-left:auto;font-size:.78rem;color:var(--ink-soft);font-variant-numeric:tabular-nums;}
+  .caption{
+    margin:10px 2px 0;font-size:.85rem;color:var(--ink-soft);min-height:1.4em;
+    font-family:var(--font-mono);
+  }
+  .hint{font-size:.82rem;color:var(--ink-soft);margin:0 0 12px;}
+  .hint::before{content:"💡 ";}
+  pre.code-block{
+    background:#0B1119;color:#DCE6EF;border-radius:8px;padding:14px 16px;
+    overflow-x:auto;margin:0;font-size:.85rem;line-height:1.6;
+  }
+  pre.code-block code{font-family:var(--font-mono);white-space:pre;}
+
+  footer.pagefoot{
+    display:flex;justify-content:space-between;gap:12px;margin-top:8px;
+    font-size:.9rem;font-weight:600;
+  }
+  footer.pagefoot a{text-decoration:none;}
+  footer.pagefoot a:hover{text-decoration:underline;}
+
+  @media (max-width:520px){
+    .topbar-nav{font-size:.8rem;gap:10px;}
+    .topic-card{padding:16px;}
+    .counter{margin-left:0;}
+  }
+
+  .blank-title{font-size:.85rem;font-weight:700;color:var(--ink-soft);margin:0 0 8px;}
+  .blank-exercise pre.code-block{margin-bottom:0;}
+  .blank-toolbar{display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px;margin:10px 0 18px;}
+  .blank-result{font-size:.82rem;font-weight:600;color:var(--ink-soft);}
+  .blank-result.ok{color:var(--ok);}
+  .blank-result.warn{color:var(--danger);}
+  .blank-input{
+    font-family:var(--font-mono);font-size:.85rem;
+    background:rgba(255,255,255,.07);color:#DCE6EF;
+    border:none;border-bottom:2px dashed #52616f;border-radius:3px 3px 0 0;
+    padding:1px 4px;margin:0 2px;
+  }
+  .blank-input:focus{outline:none;border-bottom-color:var(--accent);background:rgba(34,184,207,.15);}
+  .blank-input.correct{border-bottom-style:solid;border-bottom-color:var(--ok);background:rgba(63,191,107,.18);}
+  .blank-input.incorrect{border-bottom-style:solid;border-bottom-color:var(--danger);background:rgba(226,105,90,.18);}
+  .blank-input.revealed{border-bottom-color:var(--accent-warm);background:rgba(242,183,5,.15);font-style:italic;}
+
+  .problem-list-title{font-size:.85rem;font-weight:700;color:var(--ink-soft);margin:16px 0 8px;}
+  .problem-list-note{font-size:.78rem;color:var(--ink-soft);margin:-4px 0 10px;}
+  .problem-list-items{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px;}
+  .problem-list-items li{
+    display:flex;align-items:center;justify-content:space-between;gap:10px;
+    padding:8px 12px;background:var(--surface-alt);border-radius:7px;font-size:.88rem;
+  }
+  .problem-list-items a{font-weight:600;text-decoration:none;}
+  .problem-list-items a:hover{text-decoration:underline;}
+  .pdiff{
+    font-size:.72rem;color:var(--ink-soft);white-space:nowrap;
+    background:var(--surface);border-radius:5px;padding:2px 8px;
+  }
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <div class="topbar-titles">
+      <h1>Day 1 · 基础算法（上）</h1>
+      <p>对应牛客题库「基础算法」分类前半部分（BISHI1–21，共 21 题）</p>
+    </div>
+    <nav class="topbar-nav">
+      <a href="index.html">← 总览</a>
+      <a href="https://www.nowcoder.com/exam/oj?topicId=389" target="_blank" rel="noopener">牛客题库 ↗</a>
+    </nav>
+    <div class="progress-wrap">
+      <div class="progress-track"><div class="progress-fill" id="progressFill" style="width:0%"></div></div>
+      <span class="progress-text" id="progressText">0 / 5 类已完成</span>
+    </div>
+  </div>
+</header>
+
+<div class="container">
+  <main>
+    <h1 class="page-title">基础算法（上）：5 个核心套路</h1>
+
+    <div class="notice">
+      <h2>今天怎么刷（第一轮：看懂 + 跑通）</h2>
+      <ol>
+        <li>先看下面每个套路的动画演示，点「▶ 播放」看一遍执行过程，把逻辑看懂。</li>
+        <li>做一下「填空练习」，把核心那几行代码自己补出来，点「检查答案」验证有没有真的理解（卡住了直接点「显示答案」，别死磕）。</li>
+        <li>点开下面「配套真题」里的真实链接，<strong>直接看答案/题解</strong>，照着思路自己敲一遍代码，调试到 AC。</li>
+        <li>AC 后花 30 秒写一句"卡点备注"（哪里没想明白），完成后勾选右上角"标记完成"。</li>
+      </ol>
+      <p class="fine">说明：每道"配套真题"的题号、题目名和链接都来自牛客题库页面实际内容，可以直接点开跳转；个别套路的真题实际归类在后面几天的分类里，会在对应位置注明。</p>
+    </div>
+
+    <div id="topics"></div>
+  </main>
+
+  <footer class="pagefoot">
+    <span></span>
+    <a href="day2.html">Day 2：基础算法（下）→</a>
+  </footer>
+</div>
+
+<script>
+"use strict";
+
+/* ---------- 颜色 & 字体（canvas 内固定使用深色底，与页面主题无关） ---------- */
+const FONT_MONO = "'Cascadia Mono','JetBrains Mono','Consolas',monospace";
+const COLORS = {
+  cellBg:'#1C2733', cellBorder:'#2A3746', text:'#DCE6EF', textOnFill:'#0B1119',
+  indexLabel:'#5B6B7A', rowLabel:'#9AA7B5', message:'#9AA7B5',
+  accent:'#22B8CF', warm:'#F2B705', ok:'#3FBF6B', danger:'#E2695A', muted:'#3A4756'
+};
+function colorFor(key){ return COLORS[key] || COLORS.accent; }
+function drawRoundRect(ctx,x,y,w,h,r){
+  ctx.beginPath();
+  ctx.moveTo(x+r,y);
+  ctx.arcTo(x+w,y,x+w,y+h,r);
+  ctx.arcTo(x+w,y+h,x,y+h,r);
+  ctx.arcTo(x,y+h,x,y,r);
+  ctx.arcTo(x,y,x+w,y,r);
+  ctx.closePath();
+}
+
+/* ---------- 场景渲染：数组/双行数组 ---------- */
+function renderArrayScene(ctx,W,H,s){
+  ctx.clearRect(0,0,W,H);
+  ctx.fillStyle = COLORS.cellBg === '#1C2733' ? '#0F1720' : '#0F1720';
+  ctx.fillRect(0,0,W,H);
+  const rows = s.rows;
+  const msgH = 26;
+  const contentH = H - msgH;
+  const rowBlock = contentH / rows.length;
+
+  rows.forEach((row,ri)=>{
+    const baseY = ri*rowBlock;
+    const n = row.values.length;
+    const gap = 8;
+    let cellW = Math.min(44, (W-32-(n-1)*gap)/n);
+    cellW = Math.max(cellW, 20);
+    const totalW = n*cellW + (n-1)*gap;
+    const startX = (W-totalW)/2;
+    const cellH = Math.min(36, rowBlock*0.42);
+    const cellY = baseY + rowBlock*0.22;
+
+    if(row.label){
+      ctx.fillStyle = colorFor('rowLabel');
+      ctx.font = `600 11px ${FONT_MONO}`;
+      ctx.textAlign = 'left'; ctx.textBaseline='alphabetic';
+      ctx.fillText(row.label, startX, cellY-8);
+    }
+
+    for(let i=0;i<n;i++){
+      const x = startX + i*(cellW+gap);
+      const val = row.values[i];
+      const hi = row.highlights && row.highlights[i];
+      ctx.fillStyle = hi ? colorFor(hi) : COLORS.cellBg;
+      drawRoundRect(ctx,x,cellY,cellW,cellH,6); ctx.fill();
+      ctx.strokeStyle = COLORS.cellBorder; ctx.lineWidth=1; ctx.stroke();
+      if(val!==null && val!==undefined){
+        ctx.fillStyle = hi ? COLORS.textOnFill : COLORS.text;
+        ctx.font = `700 13px ${FONT_MONO}`;
+        ctx.textAlign='center'; ctx.textBaseline='middle';
+        ctx.fillText(String(val), x+cellW/2, cellY+cellH/2+1);
+      }
+      ctx.fillStyle = colorFor('indexLabel');
+      ctx.font = `10px ${FONT_MONO}`;
+      ctx.textAlign='center'; ctx.textBaseline='alphabetic';
+      ctx.fillText(String(i), x+cellW/2, cellY+cellH+13);
+    }
+
+    (row.pointers||[]).forEach(p=>{
+      const x = startX + p.idx*(cellW+gap) + cellW/2;
+      const y = cellY+cellH+22;
+      ctx.fillStyle = colorFor(p.color||'accent');
+      ctx.beginPath();
+      ctx.moveTo(x,y); ctx.lineTo(x-6,y+9); ctx.lineTo(x+6,y+9);
+      ctx.closePath(); ctx.fill();
+      ctx.font = `700 11px ${FONT_MONO}`;
+      ctx.textAlign='center'; ctx.textBaseline='alphabetic';
+      ctx.fillText(p.label, x, y+22);
+    });
+  });
+
+  if(s.message){
+    ctx.fillStyle = colorFor('message');
+    ctx.font = `500 12px ${FONT_MONO}`;
+    ctx.textAlign='left'; ctx.textBaseline='alphabetic';
+    ctx.fillText(s.message, 14, H-10);
+  }
+}
+
+/* ---------- 场景渲染：网格（矩阵） ---------- */
+function renderGridScene(ctx,W,H,s){
+  ctx.clearRect(0,0,W,H);
+  ctx.fillStyle = '#0F1720'; ctx.fillRect(0,0,W,H);
+  const grid = s.grid;
+  const rows = grid.length, cols = grid[0].length;
+  const msgH = 26;
+  const contentH = H - msgH;
+  const gap = 6;
+  const cell = Math.min(52, (W-32-(cols-1)*gap)/cols, (contentH-16-(rows-1)*gap)/rows);
+  const totalW = cols*cell + (cols-1)*gap;
+  const totalH = rows*cell + (rows-1)*gap;
+  const startX = (W-totalW)/2;
+  const startY = 8 + (contentH-16-totalH)/2;
+
+  for(let r=0;r<rows;r++){
+    for(let c=0;c<cols;c++){
+      const x = startX + c*(cell+gap);
+      const y = startY + r*(cell+gap);
+      const cellData = grid[r][c];
+      if(cellData.value === null || cellData.value === undefined) continue; // 空格子：不画，留白（比如三角形/稀疏网格）
+      ctx.fillStyle = cellData.hi ? colorFor(cellData.hi) : COLORS.cellBg;
+      drawRoundRect(ctx,x,y,cell,cell,6); ctx.fill();
+      ctx.strokeStyle = COLORS.cellBorder; ctx.lineWidth=1; ctx.stroke();
+      ctx.fillStyle = cellData.hi ? COLORS.textOnFill : COLORS.text;
+      ctx.font = `700 13px ${FONT_MONO}`;
+      ctx.textAlign='center'; ctx.textBaseline='middle';
+      ctx.fillText(String(cellData.value), x+cell/2, y+cell/2+1);
+      if(cellData.order){
+        ctx.fillStyle = cellData.hi ? COLORS.textOnFill : colorFor('indexLabel');
+        ctx.font = `9px ${FONT_MONO}`;
+        ctx.textAlign='left'; ctx.textBaseline='top';
+        ctx.fillText(String(cellData.order), x+3, y+2);
+      }
+    }
+  }
+
+  if(s.message){
+    ctx.fillStyle = colorFor('message');
+    ctx.font = `500 12px ${FONT_MONO}`;
+    ctx.textAlign='left'; ctx.textBaseline='alphabetic';
+    ctx.fillText(s.message, 14, H-10);
+  }
+}
+
+/* ---------- 场景渲染：二进制位 ---------- */
+function renderBitScene(ctx,W,H,s){
+  ctx.clearRect(0,0,W,H);
+  ctx.fillStyle = '#0F1720'; ctx.fillRect(0,0,W,H);
+  const bits = s.bits;
+  const n = bits.length;
+  const gap = 8;
+  let cellW = Math.min(46, (W-32-(n-1)*gap)/n);
+  cellW = Math.max(cellW,22);
+  const totalW = n*cellW + (n-1)*gap;
+  const startX = (W-totalW)/2;
+  const cellY = 30, cellH = 40;
+
+  for(let i=0;i<n;i++){
+    const x = startX + i*(cellW+gap);
+    const isOne = bits[i]===1;
+    ctx.fillStyle = isOne ? colorFor('warm') : COLORS.cellBg;
+    drawRoundRect(ctx,x,cellY,cellW,cellH,6); ctx.fill();
+    ctx.strokeStyle = COLORS.cellBorder; ctx.lineWidth=1; ctx.stroke();
+    ctx.fillStyle = isOne ? COLORS.textOnFill : COLORS.text;
+    ctx.font = `700 15px ${FONT_MONO}`;
+    ctx.textAlign='center'; ctx.textBaseline='middle';
+    ctx.fillText(String(bits[i]), x+cellW/2, cellY+cellH/2+1);
+  }
+
+  if(s.resultText){
+    ctx.fillStyle = colorFor('rowLabel');
+    ctx.font = `600 12px ${FONT_MONO}`;
+    ctx.textAlign='center'; ctx.textBaseline='alphabetic';
+    ctx.fillText(s.resultText, W/2, cellY+cellH+22);
+  }
+
+  if(s.message){
+    ctx.fillStyle = colorFor('message');
+    ctx.font = `500 12px ${FONT_MONO}`;
+    ctx.textAlign='left'; ctx.textBaseline='alphabetic';
+    ctx.fillText(s.message, 14, H-10);
+  }
+}
+
+const DRAW_FUNCS = { array: renderArrayScene, grid: renderGridScene, bit: renderBitScene };
+
+/* ---------- 填空练习 & 真题引用：数据构造小工具 ---------- */
+function T(value){ return {type:'text', value}; }
+function B(answer, alts){ return {type:'blank', answer, alts}; }
+/* num/title/diff 来自牛客题库「笔试模板必刷」页面实际抓取，uuid 是该题的 /practice/ 详情页标识 */
+function P(num, title, diff, uuid){ return {num, title, diff, href:`https://www.nowcoder.com/practice/${uuid}`}; }
+
+/* ---------- 步骤数据生成 ---------- */
+function buildPrefixSteps(arr){
+  const n = arr.length;
+  const prefix = new Array(n+1).fill(null);
+  prefix[0] = 0;
+  const steps = [];
+  const snap = (msg, arrHi, prefHi) => steps.push({
+    rows:[
+      {label:'arr[]', values:arr.slice(), highlights:arrHi||{}},
+      {label:'prefix[]', values:prefix.slice(), highlights:prefHi||{}}
+    ],
+    message: msg
+  });
+  snap('初始化 prefix[0] = 0', {}, {0:'warm'});
+  for(let i=0;i<n;i++){
+    const before = prefix[i];
+    prefix[i+1] = prefix[i] + arr[i];
+    snap(`prefix[${i+1}] = prefix[${i}] + arr[${i}] = ${before} + ${arr[i]} = ${prefix[i+1]}`,
+      {[i]:'accent'}, {[i]:'muted', [i+1]:'warm'});
+  }
+  snap('构建完成：区间和 [l,r] = prefix[r+1] - prefix[l]，O(1) 查询任意区间和', {}, {});
+  return steps;
+}
+
+function buildTwoPointerSteps(arr, target){
+  const n = arr.length;
+  let l = 0, r = n-1;
+  const steps = [];
+  const snap = (msg, hi) => steps.push({
+    rows:[{
+      label:`arr[]（有序，target=${target}）`,
+      values:arr.slice(),
+      highlights: hi||{},
+      pointers:[{idx:l,label:'L',color:'accent'},{idx:r,label:'R',color:'warm'}]
+    }],
+    message: msg
+  });
+  snap(`初始化 L=0, R=${r}`, {[l]:'accent',[r]:'warm'});
+  let found = false;
+  while(l < r){
+    const sum = arr[l] + arr[r];
+    if(sum === target){
+      snap(`arr[L]+arr[R] = ${arr[l]}+${arr[r]} = ${sum} = target，找到！`, {[l]:'ok',[r]:'ok'});
+      found = true;
+      break;
+    } else if(sum < target){
+      snap(`arr[L]+arr[R] = ${sum} < target，和偏小，L 右移`, {[l]:'accent',[r]:'warm'});
+      l++;
+    } else {
+      snap(`arr[L]+arr[R] = ${sum} > target，和偏大，R 左移`, {[l]:'accent',[r]:'warm'});
+      r--;
+    }
+  }
+  if(!found){
+    snap('L 与 R 相遇，遍历结束（本例数据已在上面找到答案，此分支用于说明未命中的情况）', {});
+  }
+  return steps;
+}
+
+function buildBubbleSteps(arr0){
+  const arr = arr0.slice();
+  const n = arr.length;
+  const steps = [];
+  const snap = (msg, hi) => steps.push({ rows:[{label:'arr[]', values:arr.slice(), highlights:hi||{}}], message: msg });
+  snap('初始数组', {});
+  for(let i=0;i<n-1;i++){
+    let swapped = false;
+    for(let j=0;j<n-1-i;j++){
+      snap(`比较 arr[${j}]=${arr[j]} 和 arr[${j+1}]=${arr[j+1]}`, {[j]:'accent',[j+1]:'accent'});
+      if(arr[j] > arr[j+1]){
+        const t = arr[j]; arr[j] = arr[j+1]; arr[j+1] = t;
+        swapped = true;
+        snap(`arr[${j}] > arr[${j+1}]，交换后：${arr[j]}, ${arr[j+1]}`, {[j]:'warm',[j+1]:'warm'});
+      }
+    }
+    const sortedHi = {};
+    for(let k=0;k<=i;k++) sortedHi[n-1-k] = 'ok';
+    snap(`第 ${i+1} 轮结束，右侧 ${i+1} 个元素已归位`, sortedHi);
+    if(!swapped){
+      snap('本轮没有发生交换，数组已有序，提前结束', sortedHi);
+      break;
+    }
+  }
+  const allSorted = {};
+  arr.forEach((_,idx)=> allSorted[idx]='ok');
+  snap('排序完成', allSorted);
+  return steps;
+}
+
+function buildBitSteps(n0){
+  let n = n0, count = 0;
+  const steps = [];
+  const toBits = v => v.toString(2).padStart(8,'0').split('').map(Number);
+  const snap = msg => steps.push({ bits: toBits(n), resultText:`已清除 ${count} 位 1，n 当前 = ${n}`, message: msg });
+  snap(`初始 n = ${n0}（二进制 ${toBits(n0).join('')}）`);
+  while(n > 0){
+    const before = n;
+    n = n & (n-1);
+    count++;
+    snap(`n &= (n-1)：${before} & ${before-1} = ${n}，清除最低位的 1，计数 +1`);
+  }
+  snap(`n 变为 0，循环结束，共有 ${count} 个 1`);
+  return steps;
+}
+
+function buildSpiralSteps(rows, cols){
+  const grid = [];
+  let v = 1;
+  for(let r=0;r<rows;r++){
+    const row = [];
+    for(let c=0;c<cols;c++) row.push({value:v++, hi:null, order:null});
+    grid.push(row);
+  }
+  const steps = [];
+  const snapshot = msg => steps.push({
+    grid: grid.map(row => row.map(cell => ({...cell}))),
+    message: msg
+  });
+  let top=0, bottom=rows-1, left=0, right=cols-1, order=0;
+  snapshot('矩阵初始化，准备按「上→右→下→左」的顺序绕圈遍历');
+  while(top<=bottom && left<=right){
+    for(let c=left;c<=right;c++){
+      grid[top][c].hi='accent'; grid[top][c].order=++order;
+      snapshot(`第 ${order} 步：grid[${top}][${c}] = ${grid[top][c].value}（向右）`);
+    }
+    top++;
+    for(let r=top;r<=bottom;r++){
+      grid[r][right].hi='accent'; grid[r][right].order=++order;
+      snapshot(`第 ${order} 步：grid[${r}][${right}] = ${grid[r][right].value}（向下）`);
+    }
+    right--;
+    if(top<=bottom){
+      for(let c=right;c>=left;c--){
+        grid[bottom][c].hi='accent'; grid[bottom][c].order=++order;
+        snapshot(`第 ${order} 步：grid[${bottom}][${c}] = ${grid[bottom][c].value}（向左）`);
+      }
+      bottom--;
+    }
+    if(left<=right){
+      for(let r=bottom;r>=top;r--){
+        grid[r][left].hi='accent'; grid[r][left].order=++order;
+        snapshot(`第 ${order} 步：grid[${r}][${left}] = ${grid[r][left].value}（向上）`);
+      }
+      left++;
+    }
+  }
+  snapshot('遍历完成，螺旋顺序访问了全部元素');
+  return steps;
+}
+
+/* ---------- 题型数据 ---------- */
+const TOPICS = [
+  {
+    id:'prefix-sum', title:'数组遍历 / 前缀和', badge:'基础 · 前缀和', height:220, render:'array',
+    explain:'遍历数组时顺便维护一个"前缀和"数组：prefix[i] 表示原数组前 i 个数的和。构建一次 O(n)，之后查询任意区间 [l,r] 的和只需要 O(1)，是很多数组题的基础套路。',
+    steps: buildPrefixSteps([3,1,4,1,5,9,2,6]),
+    blankParts: [
+      T(`vector<int> prefix(n + 1, 0);\nfor (int i = 0; i < n; i++) {\n    prefix[i + 1] = `),
+      B('prefix[i] + arr[i]'),
+      T(`;\n}\n// 区间和 [l, r] = `),
+      B('prefix[r + 1] - prefix[l]'),
+      T('')
+    ],
+    problemNote:'这几题在牛客分类里实际归在后面「数据结构」大类下的"前缀和与差分"，因为是最基础的套路，提前放在 Day1 讲，不影响你的刷题顺序。',
+    problems:[
+      P('BISHI110','【模板】静态区间和（前缀和）','入门-7','ac79a1a4a66646cc87525d6faa86e021'),
+      P('BISHI111','【模板】差分','入门-8','4bbc401a5df140309edd6f14debdba42'),
+      P('BISHI112','【模板】二维前缀和','入门-9','99eb8040d116414ea3296467ce81cbbc')
+    ]
+  },
+  {
+    id:'two-pointer', title:'双指针（有序数组两数之和）', badge:'基础 · 双指针', height:150, render:'array',
+    explain:'数组有序时，用两个指针从两端向中间靠拢：和偏大就右指针左移，和偏小就左指针右移，一次遍历就能找到答案，比暴力枚举两层循环快很多。',
+    steps: buildTwoPointerSteps([1,3,4,6,8,10], 10),
+    blankParts: [
+      T(`int left = 0, right = n - 1;\nwhile (left < right) {\n    int sum = arr[left] + arr[right];\n    if (sum == target) break;       // 找到\n    else if (`),
+      B('sum < target'),
+      T(`) left++;  // 和偏小，左指针右移\n    else `),
+      B('right--'),
+      T(`;                   // 和偏大，右指针左移\n}`)
+    ],
+    problemNote:'这几题在牛客分类里实际归在后面「数据结构」大类下的"双指针"，同样是提前讲的基础套路。',
+    problems:[
+      P('BISHI114','【模板】滑动窗口', null, 'be419f584a3f4c5b818833f1ce856626'),
+      P('BISHI116','【模板】双指针', null, 'a2fd81391e1e4177aa6d506da895381b'),
+      P('BISHI118','相差不超过k的最多数','入门-10','562630ca90ac40ce89443c91060574c6')
+    ]
+  },
+  {
+    id:'bubble-sort', title:'排序模板（冒泡排序）', badge:'基础 · 排序', height:150, render:'array',
+    explain:'相邻元素两两比较，把较大的往后交换，每一轮都能把当前未排序部分的最大值"冒泡"到末尾。虽然是 O(n²)，但代码最短，适合先建立排序的直觉。',
+    steps: buildBubbleSteps([5,2,4,1,3]),
+    blankParts: [
+      T(`for (int i = 0; i < n - 1; i++) {\n    bool swapped = false;\n    for (int j = 0; j < n - 1 - i; j++) {\n        if (`),
+      B('arr[j] > arr[j + 1]'),
+      T(`) {\n            swap(arr[j], arr[j + 1]);\n            swapped = true;\n        }\n    }\n    if (`),
+      B('!swapped'),
+      T(`) break;   // 已经有序，提前结束\n}`)
+    ],
+    problems:[
+      P('BISHI21','【模板】排序','入门-6','40bf74658879460bbf5f1bfe772e8580'),
+      P('BISHI22','分数线划定','入门-8','2395fa7b6c6e452e8d8310a7cfdbe902'),
+      P('BISHI23','小红书推荐系统','入门-9','e5b39c9034a84bf2a5e026b2b9b973d0')
+    ]
+  },
+  {
+    id:'bit-ops', title:'位运算（统计二进制中 1 的个数）', badge:'基础 · 位运算', height:150, render:'bit',
+    explain:'n & (n - 1) 有一个经典效果：把 n 最低位的 1 清零。反复执行直到 n 变成 0，执行的次数就是 n 的二进制中 1 的个数，比逐位判断更快。',
+    steps: buildBitSteps(13),
+    blankParts: [
+      T(`int countBits(int n) {\n    int count = 0;\n    while (`),
+      B('n', ['n!=0','n > 0']),
+      T(`) {\n        `),
+      B('n &= (n - 1)'),
+      T(`;  // 清除最低位的 1\n        count++;\n    }\n    return count;\n}`)
+    ],
+    problems:[
+      P('BISHI30','二进制数1','入门-5','bc4c7936f5ed42cbb9131b6f39aa272b'),
+      P('BISHI31','二进制不同位数','入门-6','daf9032926614dab91ca624a7759a868'),
+      P('BISHI32','被打乱的异或和','入门-6','116db6858c424fb89b821125053bbc15')
+    ]
+  },
+  {
+    id:'simulation', title:'模拟（螺旋矩阵遍历）', badge:'基础 · 模拟', height:260, render:'grid',
+    explain:'"模拟"类题目没有固定公式，关键是把题目描述的过程原样翻译成代码。螺旋矩阵维护 top/bottom/left/right 四条边界，按"上→右→下→左"顺序收缩遍历，边界撞在一起时结束。',
+    steps: buildSpiralSteps(3,3),
+    blankParts: [
+      T(`int top=0, bottom=m-1, left=0, right=n-1;\nvector<int> res;\nwhile (top <= bottom && left <= right) {\n    for (int c = left; c <= right; c++) res.push_back(g[top][c]);\n    `),
+      B('top++'),
+      T(`;\n    for (int r = top; r <= bottom; r++) res.push_back(g[r][right]);\n    `),
+      B('right--'),
+      T(`;\n    if (top <= bottom) {\n        for (int c = right; c >= left; c--) res.push_back(g[bottom][c]);\n        bottom--;\n    }\n    if (left <= right) {\n        for (int r = bottom; r >= top; r--) res.push_back(g[r][left]);\n        left++;\n    }\n}`)
+    ],
+    problems:[
+      P('BISHI14','特殊的科学计数法','入门-9','ca0962879d3b40d8bb598fb9a905ac7a'),
+      P('BISHI15','小红的夹吃棋','入门-7','94648fd37a644c76adb2adb29c2a3037'),
+      P('BISHI16','计算一年中的第几天','入门-8','178aa3dafb144bb8b0445edb5e9b812a'),
+      P('BISHI19','乒乓球','入门-8','78660925b1cd49b6b2e43cb375ed7945')
+    ]
+  }
+];
+
+/* ---------- 播放器 ---------- */
+function debounce(fn, ms){
+  let t;
+  return (...a) => { clearTimeout(t); t = setTimeout(() => fn(...a), ms); };
+}
+
+class StepPlayer{
+  constructor(opts){
+    Object.assign(this, opts);
+    this.idx = 0; this.playing = false; this.timer = null; this.ctx = null;
+    this.playBtn.addEventListener('click', () => this.toggle());
+    this.stepBackBtn.addEventListener('click', () => { this.pause(); this.go(this.idx-1); });
+    this.stepFwdBtn.addEventListener('click', () => { this.pause(); this.go(this.idx+1); });
+    this.resetBtn.addEventListener('click', () => { this.pause(); this.go(0); });
+    window.addEventListener('resize', debounce(() => this.setup(), 150));
+    this.setup();
+  }
+  setup(){
+    const dpr = window.devicePixelRatio || 1;
+    const rect = this.canvas.getBoundingClientRect();
+    const w = Math.max(1, rect.width), h = Math.max(1, rect.height);
+    this.canvas.width = Math.round(w*dpr);
+    this.canvas.height = Math.round(h*dpr);
+    this.ctx = this.canvas.getContext('2d');
+    this.ctx.setTransform(dpr,0,0,dpr,0,0);
+    this.W = w; this.H = h;
+    this.render();
+  }
+  render(){
+    if(!this.ctx) return;
+    const step = this.steps[this.idx];
+    this.draw(this.ctx, this.W, this.H, step);
+    if(this.captionEl) this.captionEl.textContent = step.message || '';
+    if(this.counterEl) this.counterEl.textContent = `步骤 ${this.idx+1} / ${this.steps.length}`;
+  }
+  go(i){
+    if(i < 0) i = 0;
+    if(i >= this.steps.length){ i = this.steps.length-1; this.pause(); }
+    this.idx = i; this.render();
+  }
+  toggle(){ this.playing ? this.pause() : this.play(); }
+  play(){
+    if(this.idx >= this.steps.length-1) this.idx = 0;
+    this.playing = true; this.playBtn.textContent = '⏸ 暂停';
+    const delay = () => 1500 - Number(this.speedEl.value)*230;
+    const tick = () => {
+      if(!this.playing) return;
+      if(this.idx >= this.steps.length-1){ this.pause(); return; }
+      this.idx++; this.render();
+      this.timer = setTimeout(tick, delay());
+    };
+    this.timer = setTimeout(tick, delay());
+  }
+  pause(){ this.playing = false; this.playBtn.textContent = '▶ 播放'; clearTimeout(this.timer); }
+}
+
+/* ---------- 进度 ---------- */
+const STORAGE_KEY = 'nc-cram-day1';
+let progress = {};
+try{ progress = JSON.parse(localStorage.getItem(STORAGE_KEY) || '{}'); } catch(e){ progress = {}; }
+
+function saveProgress(){
+  try{ localStorage.setItem(STORAGE_KEY, JSON.stringify(progress)); } catch(e){}
+}
+function updateProgressBar(){
+  const total = TOPICS.length;
+  const done = TOPICS.filter(t => progress[t.id]).length;
+  document.getElementById('progressFill').style.width = (done/total*100) + '%';
+  document.getElementById('progressText').textContent = `${done} / ${total} 类已完成`;
+}
+
+/* ---------- 填空练习：DOM 构建 ---------- */
+function createBlankBlock(parts){
+  const wrap = document.createElement('div');
+  wrap.className = 'blank-exercise';
+
+  const pre = document.createElement('pre');
+  pre.className = 'code-block';
+  const code = document.createElement('code');
+  const inputs = [];
+
+  parts.forEach(p => {
+    if(p.type === 'text'){
+      code.appendChild(document.createTextNode(p.value));
+    } else {
+      const input = document.createElement('input');
+      input.type = 'text';
+      input.className = 'blank-input';
+      input.autocomplete = 'off';
+      input.autocapitalize = 'off';
+      input.spellcheck = false;
+      input.size = Math.max(3, p.answer.length + 1);
+      input.dataset.answer = p.answer;
+      if(p.alts) input.dataset.alts = JSON.stringify(p.alts);
+      code.appendChild(input);
+      inputs.push(input);
+    }
+  });
+  pre.appendChild(code);
+  wrap.appendChild(pre);
+
+  const toolbar = document.createElement('div');
+  toolbar.className = 'blank-toolbar';
+  toolbar.innerHTML = `
+    <button type="button" class="btn check">✓ 检查答案</button>
+    <button type="button" class="btn reveal">显示答案</button>
+    <button type="button" class="btn clear">清空重做</button>
+    <span class="blank-result"></span>
+  `;
+  wrap.appendChild(toolbar);
+
+  const resultEl = toolbar.querySelector('.blank-result');
+  const norm = s => (s || '').replace(/\s+/g, '');
+
+  function isCorrect(input){
+    const val = norm(input.value);
+    if(!val) return false;
+    const candidates = [input.dataset.answer, ...(input.dataset.alts ? JSON.parse(input.dataset.alts) : [])];
+    return candidates.some(c => norm(c) === val);
+  }
+
+  toolbar.querySelector('.check').addEventListener('click', () => {
+    let correctCount = 0;
+    inputs.forEach(inp => {
+      inp.classList.remove('correct', 'incorrect', 'revealed');
+      if(isCorrect(inp)){ inp.classList.add('correct'); correctCount++; }
+      else inp.classList.add('incorrect');
+    });
+    const all = correctCount === inputs.length;
+    resultEl.textContent = all
+      ? `✅ ${correctCount}/${inputs.length} 全对，理解到位！`
+      : `${correctCount}/${inputs.length} 正确，红色的地方再想想（卡住了点"显示答案"）`;
+    resultEl.className = 'blank-result ' + (all ? 'ok' : 'warn');
+  });
+
+  toolbar.querySelector('.reveal').addEventListener('click', () => {
+    inputs.forEach(inp => {
+      inp.value = inp.dataset.answer;
+      inp.classList.remove('correct', 'incorrect');
+      inp.classList.add('revealed');
+    });
+    resultEl.textContent = '已显示参考答案，建议自己再默写一遍加深印象';
+    resultEl.className = 'blank-result';
+  });
+
+  toolbar.querySelector('.clear').addEventListener('click', () => {
+    inputs.forEach(inp => {
+      inp.value = '';
+      inp.classList.remove('correct', 'incorrect', 'revealed');
+    });
+    resultEl.textContent = '';
+    resultEl.className = 'blank-result';
+    inputs[0] && inputs[0].focus();
+  });
+
+  return wrap;
+}
+
+/* ---------- 真题列表 ---------- */
+function renderProblemList(container, problems, note){
+  const h = document.createElement('h4');
+  h.className = 'problem-list-title';
+  h.textContent = '配套真题（点开直接在 nowcoder 上做，第一轮直接看答案敲一遍）';
+  container.appendChild(h);
+
+  if(note){
+    const p = document.createElement('p');
+    p.className = 'problem-list-note';
+    p.textContent = note;
+    container.appendChild(p);
+  }
+
+  const ul = document.createElement('ul');
+  ul.className = 'problem-list-items';
+  (problems || []).forEach(p => {
+    const li = document.createElement('li');
+    const a = document.createElement('a');
+    a.href = p.href; a.target = '_blank'; a.rel = 'noopener';
+    a.textContent = `${p.num} · ${p.title}`;
+    li.appendChild(a);
+    if(p.diff){
+      const span = document.createElement('span');
+      span.className = 'pdiff';
+      span.textContent = p.diff;
+      li.appendChild(span);
+    }
+    ul.appendChild(li);
+  });
+  container.appendChild(ul);
+}
+
+/* ---------- 构建卡片 ---------- */
+function createTopicCard(topic){
+  const card = document.createElement('article');
+  card.className = 'topic-card';
+
+  if(topic.brief){
+    /* 精简卡片：进阶/选学内容，不配动画和填空，只讲清楚是什么 + 真题参考 */
+    card.innerHTML = `
+      <div class="topic-head">
+        <h2>${topic.title}</h2>
+        <div class="topic-head-right">
+          <span class="badge">${topic.badge}</span>
+          <label class="check">
+            <input type="checkbox" />
+            <span>标记完成</span>
+          </label>
+        </div>
+      </div>
+      <p class="explain">${topic.explain}</p>
+      <div class="problem-list"></div>
+    `;
+    renderProblemList(card.querySelector('.problem-list'), topic.problems, topic.problemNote);
+  } else {
+    card.innerHTML = `
+      <div class="topic-head">
+        <h2>${topic.title}</h2>
+        <div class="topic-head-right">
+          <span class="badge">${topic.badge}</span>
+          <label class="check">
+            <input type="checkbox" />
+            <span>标记完成</span>
+          </label>
+        </div>
+      </div>
+      <p class="explain">${topic.explain}</p>
+      <div class="stage">
+        <canvas style="height:${topic.height}px"></canvas>
+        <div class="toolbar">
+          <button type="button" class="btn back" title="上一步">⏮</button>
+          <button type="button" class="btn play" title="播放/暂停">▶ 播放</button>
+          <button type="button" class="btn fwd" title="下一步">⏭</button>
+          <button type="button" class="btn reset" title="重置">↺</button>
+          <label class="speed-label">速度 <input type="range" min="1" max="5" value="3" class="speed" /></label>
+          <span class="counter"></span>
+        </div>
+        <p class="caption"></p>
+      </div>
+      <h3 class="blank-title">填空练习：补全核心代码</h3>
+      <div class="blank-slot"></div>
+      <div class="problem-list"></div>
+    `;
+    card.querySelector('.blank-slot').appendChild(createBlankBlock(topic.blankParts));
+    renderProblemList(card.querySelector('.problem-list'), topic.problems, topic.problemNote);
+  }
+
+  const cb = card.querySelector('input[type=checkbox]');
+  cb.checked = !!progress[topic.id];
+  cb.addEventListener('change', () => {
+    progress[topic.id] = cb.checked;
+    saveProgress();
+    updateProgressBar();
+  });
+
+  return card;
+}
+
+/* StepPlayer 依赖 canvas 的实际渲染尺寸（getBoundingClientRect），
+   必须在 card 被插入文档之后再创建，否则拿到的是 0 尺寸的游离节点。
+   brief 卡片没有 canvas，直接跳过 */
+function wireTopicCard(topic, card){
+  if(topic.brief) return;
+  new StepPlayer({
+    canvas: card.querySelector('canvas'),
+    captionEl: card.querySelector('.caption'),
+    counterEl: card.querySelector('.counter'),
+    playBtn: card.querySelector('.play'),
+    stepBackBtn: card.querySelector('.back'),
+    stepFwdBtn: card.querySelector('.fwd'),
+    resetBtn: card.querySelector('.reset'),
+    speedEl: card.querySelector('.speed'),
+    steps: topic.steps,
+    draw: DRAW_FUNCS[topic.render]
+  });
+}
+
+const topicsRoot = document.getElementById('topics');
+TOPICS.forEach(topic => {
+  const card = createTopicCard(topic);
+  topicsRoot.appendChild(card);
+  wireTopicCard(topic, card);
+});
+updateProgressBar();
+</script>
+</body>
+</html>

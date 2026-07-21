@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="color-scheme" content="light dark" />
+<title>牛客算法训练营 · 一周刷题计划</title>
+<style>
+  :root{
+    --bg:#F2F4F7;
+    --surface:#FFFFFF;
+    --surface-alt:#E7EBEF;
+    --ink:#1B2430;
+    --ink-soft:#57626F;
+    --border:#D8DEE5;
+    --accent:#0E7C90;
+    --accent-ink:#FFFFFF;
+    --accent-warm:#9C6707;
+    --accent-warm-soft:#F3E6C8;
+    --ok:#1F8A4C;
+    --danger:#B23B27;
+    --shadow: 0 1px 2px rgba(20,30,40,.07), 0 10px 26px rgba(20,30,40,.07);
+    --font-display:'Cascadia Mono','JetBrains Mono','Consolas','SFMono-Regular',ui-monospace,monospace;
+    --font-body:'Segoe UI','PingFang SC','Microsoft YaHei','Noto Sans SC',system-ui,sans-serif;
+    --font-mono:'Cascadia Mono','JetBrains Mono','Consolas',ui-monospace,monospace;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#0F1720; --surface:#17212C; --surface-alt:#1E2A37;
+      --ink:#E7ECF2; --ink-soft:#9AA7B5; --border:#2A3746;
+      --accent:#22B8CF; --accent-ink:#08222A;
+      --accent-warm:#F2B705; --accent-warm-soft:#3A2E0C;
+      --ok:#3FBF6B; --danger:#E2695A;
+      --shadow: 0 1px 2px rgba(0,0,0,.35), 0 14px 32px rgba(0,0,0,.4);
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#0F1720; --surface:#17212C; --surface-alt:#1E2A37;
+    --ink:#E7ECF2; --ink-soft:#9AA7B5; --border:#2A3746;
+    --accent:#22B8CF; --accent-ink:#08222A;
+    --accent-warm:#F2B705; --accent-warm-soft:#3A2E0C;
+    --ok:#3FBF6B; --danger:#E2695A;
+    --shadow: 0 1px 2px rgba(0,0,0,.35), 0 14px 32px rgba(0,0,0,.4);
+  }
+  :root[data-theme="light"]{
+    --bg:#F2F4F7; --surface:#FFFFFF; --surface-alt:#E7EBEF;
+    --ink:#1B2430; --ink-soft:#57626F; --border:#D8DEE5;
+    --accent:#0E7C90; --accent-ink:#FFFFFF;
+    --accent-warm:#9C6707; --accent-warm-soft:#F3E6C8;
+    --ok:#1F8A4C; --danger:#B23B27;
+    --shadow: 0 1px 2px rgba(20,30,40,.07), 0 10px 26px rgba(20,30,40,.07);
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:var(--bg); color:var(--ink);
+    font-family:var(--font-body);
+    font-size:16px; line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:var(--accent);}
+  .container{max-width:900px;margin:0 auto;padding:48px 20px 64px;}
+  header.hero h1{
+    font-family:var(--font-display); font-weight:700; letter-spacing:-0.01em;
+    font-size:2rem; margin:0 0 10px; text-wrap:balance;
+  }
+  header.hero p.lede{font-size:1.02rem; color:var(--ink-soft); max-width:62ch; margin:0 0 6px;}
+  header.hero .meta{font-size:.85rem; color:var(--ink-soft); margin:0 0 28px;}
+  header.hero .meta a{font-weight:600;}
+
+  .notice{
+    background:var(--accent-warm-soft);
+    border:1px solid color-mix(in srgb, var(--accent-warm) 35%, transparent);
+    border-radius:10px; padding:16px 18px; margin-bottom:32px;
+  }
+  .notice h2{margin:0 0 8px; font-size:1rem;}
+  .notice ol{margin:0 0 8px 1.1em; padding:0; font-size:.92rem;}
+  .notice li{margin:3px 0;}
+  .notice .fine{margin:0; font-size:.8rem; color:var(--ink-soft);}
+
+  .day-list{display:flex; flex-direction:column; gap:14px;}
+  .day-card{
+    display:block; text-decoration:none; color:inherit;
+    background:var(--surface); border:1px solid var(--border); border-radius:12px;
+    padding:20px 22px; box-shadow:var(--shadow);
+    transition:border-color .15s ease, transform .15s ease;
+  }
+  .day-card:hover{border-color:var(--accent);}
+  .day-card:focus-visible{outline:2px solid var(--accent); outline-offset:2px;}
+  .day-card-top{display:flex; flex-wrap:wrap; align-items:baseline; justify-content:space-between; gap:8px 16px;}
+  .day-card-title{font-family:var(--font-display); font-weight:700; font-size:1.12rem;}
+  .day-card-title .num{color:var(--accent);}
+  .day-card-range{font-size:.78rem; color:var(--ink-soft); font-variant-numeric:tabular-nums; white-space:nowrap;}
+  .day-card-topics{margin:10px 0 0; font-size:.88rem; color:var(--ink-soft);}
+  .day-card-topics .tag{
+    display:inline-block; background:var(--surface-alt); border-radius:5px;
+    padding:2px 8px; margin:3px 6px 0 0; font-size:.78rem;
+  }
+  .day-card-topics .tag.optional{color:var(--ink-soft); font-style:italic;}
+
+  footer.pagefoot{margin-top:36px; font-size:.85rem; color:var(--ink-soft);}
+  footer.pagefoot p{margin:4px 0;}
+
+  @media (max-width:520px){
+    .container{padding:32px 16px 48px;}
+    header.hero h1{font-size:1.5rem;}
+    .day-card{padding:16px;}
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <header class="hero">
+    <h1>牛客算法训练营 · 一周刷题计划</h1>
+    <p class="lede">牛客题库「笔试模板必刷」合集，共 147 道题，按 7 大分类拆成 7 天、35 个核心套路，每个套路配一段可交互动画演示 + 填空练习 + 真实题目链接。</p>
+    <p class="meta">题库地址：<a href="https://www.nowcoder.com/exam/oj?topicId=389" target="_blank" rel="noopener">nowcoder.com 「算法笔面试篇 · 笔试模板必刷」↗</a></p>
+  </header>
+
+  <div class="notice">
+    <h2>三轮刷题法</h2>
+    <ol>
+      <li><strong>第一轮（本周，配合这个网站）</strong>：看动画懂套路 → 做填空练习验证理解 → 点开真题直接看答案敲一遍 AC，记下卡点。目标是"看懂 + 跑通"，建立题型地图。</li>
+      <li><strong>第二轮（自己安排）</strong>：不看动画和答案，独立重做一遍第一轮做过的题，卡住了回来翻对应页面复习。</li>
+      <li><strong>第三轮（自己安排）</strong>：完全从头独立完成，检验是否真正掌握。</li>
+    </ol>
+    <p class="fine">每天进度勾选保存在浏览器本地（每个页面独立保存，不会互相同步，也不会上传到任何地方）。</p>
+  </div>
+
+  <div class="day-list">
+    <a class="day-card" href="day1.html">
+      <div class="day-card-top">
+        <span class="day-card-title"><span class="num">Day 1</span> · 基础算法（上）</span>
+        <span class="day-card-range">BISHI1–21 · 21 题</span>
+      </div>
+      <p class="day-card-topics">
+        <span class="tag">前缀和</span><span class="tag">双指针</span><span class="tag">排序</span><span class="tag">位运算</span><span class="tag">模拟</span>
+      </p>
+    </a>
+    <a class="day-card" href="day2.html">
+      <div class="day-card-top">
+        <span class="day-card-title"><span class="num">Day 2</span> · 基础算法（下）</span>
+        <span class="day-card-range">BISHI22–42 · 21 题</span>
+      </div>
+      <p class="day-card-topics">
+        <span class="tag">桶思想/计数排序</span><span class="tag">构造</span><span class="tag">异或性质</span><span class="tag">巴什博弈</span><span class="tag">整除分块</span><span class="tag optional">随机化·选学</span>
+      </p>
+    </a>
+    <a class="day-card" href="day3.html">
+      <div class="day-card-top">
+        <span class="day-card-title"><span class="num">Day 3</span> · 贪心算法 + 数学算法（上）</span>
+        <span class="day-card-range">BISHI43–63 · 21 题</span>
+      </div>
+      <p class="day-card-topics">
+        <span class="tag">区间贪心</span><span class="tag">反悔堆</span><span class="tag">质数/GCD</span><span class="tag">递推/斐波那契</span>
+      </p>
+    </a>
+    <a class="day-card" href="day4.html">
+      <div class="day-card-top">
+        <span class="day-card-title"><span class="num">Day 4</span> · 数学算法（下） + 搜索算法（上）</span>
+        <span class="day-card-range">BISHI64–84 · 21 题</span>
+      </div>
+      <p class="day-card-topics">
+        <span class="tag">快速幂</span><span class="tag">组合数学</span><span class="tag optional">高级数论·选学</span><span class="tag">DFS</span><span class="tag">BFS</span>
+      </p>
+    </a>
+    <a class="day-card" href="day5.html">
+      <div class="day-card-top">
+        <span class="day-card-title"><span class="num">Day 5</span> · 搜索算法（下） + 树图算法</span>
+        <span class="day-card-range">BISHI85–105 · 21 题</span>
+      </div>
+      <p class="day-card-topics">
+        <span class="tag">二分查找</span><span class="tag">记忆化搜索</span><span class="tag optional">字符串匹配·选学</span><span class="tag">树的遍历</span><span class="tag">并查集</span>
+      </p>
+    </a>
+    <a class="day-card" href="day6.html">
+      <div class="day-card-top">
+        <span class="day-card-title"><span class="num">Day 6</span> · 树图算法（尾） + 数据结构</span>
+        <span class="day-card-range">BISHI106–126 · 21 题</span>
+      </div>
+      <p class="day-card-topics">
+        <span class="tag">Dijkstra</span><span class="tag">差分数组</span><span class="tag">滑动窗口</span><span class="tag">单调栈</span><span class="tag optional">倍增/LCA·选学</span>
+      </p>
+    </a>
+    <a class="day-card" href="day7.html">
+      <div class="day-card-top">
+        <span class="day-card-title"><span class="num">Day 7</span> · 数据结构（尾） + 动态规划</span>
+        <span class="day-card-range">BISHI127–147 · 21 题</span>
+      </div>
+      <p class="day-card-topics">
+        <span class="tag optional">线段树·选学</span><span class="tag">最大子段和</span><span class="tag">01背包</span><span class="tag">完全背包</span><span class="tag optional">进阶DP·选学</span>
+      </p>
+    </a>
+  </div>
+
+  <footer class="pagefoot">
+    <p>每道"配套真题"的题号、题目名和链接都来自牛客题库页面实际内容；个别套路的真题实际分类和当天的主标题不完全一致（比如 Day1 提前讲了几个严格算"数据结构"分类的基础套路），会在对应页面里注明。</p>
+  </footer>
+</div>
+
+</body>
+</html>

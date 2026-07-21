@@ -1,0 +1,50 @@
+[
+  {
+    "n": 2,
+    "category": "基础算法（下）",
+    "subtitle": "对应牛客题库「基础算法」分类后半部分（BISHI22–42，共 21 题）",
+    "pageTitle": "基础算法（下）：6 个核心套路",
+    "topicCount": 6,
+    "footer": "<footer class=\"pagefoot\">\n    <a href=\"day1.html\">← Day 1：基础算法（上）</a>\n    <a href=\"day3.html\">Day 3：贪心算法 + 数学算法（上）→</a>\n  </footer>"
+  },
+  {
+    "n": 3,
+    "category": "贪心算法 + 数学算法（上）",
+    "subtitle": "对应牛客题库「贪心算法」全部 + 「数学算法」前半部分（BISHI43–63，共 21 题）",
+    "pageTitle": "贪心算法 + 数学算法（上）：4 个核心套路",
+    "topicCount": 4,
+    "footer": "<footer class=\"pagefoot\">\n    <a href=\"day2.html\">← Day 2：基础算法（下）</a>\n    <a href=\"day4.html\">Day 4：数学算法（下） + 搜索算法（上）→</a>\n  </footer>"
+  },
+  {
+    "n": 4,
+    "category": "数学算法（下） + 搜索算法（上）",
+    "subtitle": "对应牛客题库「数学算法」后半部分 + 「搜索算法」前半部分（BISHI64–84，共 21 题）",
+    "pageTitle": "数学算法（下） + 搜索算法（上）：5 个核心套路",
+    "topicCount": 5,
+    "footer": "<footer class=\"pagefoot\">\n    <a href=\"day3.html\">← Day 3：贪心算法 + 数学算法（上）</a>\n    <a href=\"day5.html\">Day 5：搜索算法（下） + 树图算法→</a>\n  </footer>"
+  },
+  {
+    "n": 5,
+    "category": "搜索算法（下） + 树图算法",
+    "subtitle": "对应牛客题库「搜索算法」后半部分 + 「树图算法」（BISHI85–105，共 21 题）",
+    "pageTitle": "搜索算法（下） + 树图算法：5 个核心套路",
+    "topicCount": 5,
+    "footer": "<footer class=\"pagefoot\">\n    <a href=\"day4.html\">← Day 4：数学算法（下） + 搜索算法（上）</a>\n    <a href=\"day6.html\">Day 6：树图算法（尾） + 数据结构→</a>\n  </footer>"
+  },
+  {
+    "n": 6,
+    "category": "树图算法（尾） + 数据结构",
+    "subtitle": "对应牛客题库「树图算法」收尾 + 「数据结构」大部分（BISHI106–126，共 21 题）",
+    "pageTitle": "树图算法（尾） + 数据结构：5 个核心套路",
+    "topicCount": 5,
+    "footer": "<footer class=\"pagefoot\">\n    <a href=\"day5.html\">← Day 5：搜索算法（下） + 树图算法</a>\n    <a href=\"day7.html\">Day 7：数据结构（尾） + 动态规划→</a>\n  </footer>"
+  },
+  {
+    "n": 7,
+    "category": "数据结构（尾） + 动态规划",
+    "subtitle": "对应牛客题库「数据结构」收尾 + 「动态规划」全部（BISHI127–147，共 21 题）",
+    "pageTitle": "数据结构（尾） + 动态规划：5 个核心套路",
+    "topicCount": 5,
+    "footer": "<footer class=\"pagefoot\">\n    <a href=\"day6.html\">← Day 6：树图算法（尾） + 数据结构</a>\n    <a href=\"index.html\">回到总览 ✓ 一周完成！</a>\n  </footer>"
+  }
+]
