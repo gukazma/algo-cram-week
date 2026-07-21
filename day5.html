@@ -185,6 +185,12 @@
     font-size:.72rem;color:var(--ink-soft);white-space:nowrap;
     background:var(--surface);border-radius:5px;padding:2px 8px;
   }
+  a.pdiff.explainer-link{
+    color:var(--accent); font-weight:600; text-decoration:none;
+    border:1px solid color-mix(in srgb, var(--accent) 40%, transparent);
+    background:transparent;
+  }
+  a.pdiff.explainer-link:hover{text-decoration:underline;}
 </style>
 </head>
 <body>
@@ -410,7 +416,7 @@ const DRAW_FUNCS = { array: renderArrayScene, grid: renderGridScene, bit: render
 function T(value){ return {type:'text', value}; }
 function B(answer, alts){ return {type:'blank', answer, alts}; }
 /* num/title/diff 来自牛客题库「笔试模板必刷」页面实际抓取，uuid 是该题的 /practice/ 详情页标识 */
-function P(num, title, diff, uuid){ return {num, title, diff, href:`https://www.nowcoder.com/practice/${uuid}`}; }
+function P(num, title, diff, uuid, explainer){ return {num, title, diff, href:`https://www.nowcoder.com/practice/${uuid}`, explainer}; }
 
 /* ---------- 步骤数据生成 ---------- */
 function buildBinarySearchSteps(arr, target){
@@ -792,6 +798,13 @@ function renderProblemList(container, problems, note){
     a.href = p.href; a.target = '_blank'; a.rel = 'noopener';
     a.textContent = `${p.num} · ${p.title}`;
     li.appendChild(a);
+    if(p.explainer){
+      const ea = document.createElement('a');
+      ea.href = p.explainer;
+      ea.className = 'pdiff explainer-link';
+      ea.textContent = '📖 图解讲解';
+      li.appendChild(ea);
+    }
     if(p.diff){
       const span = document.createElement('span');
       span.className = 'pdiff';

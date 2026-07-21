@@ -144,7 +144,7 @@ const TOPICS = [
       T(`;\n// 还原：对 diff 求前缀和\nint acc = 0;\nfor (int i = 0; i < n; i++) { acc += diff[i]; result[i] = acc; }`)
     ],
     problems:[
-      P('BISHI111','【模板】差分','入门-8','4bbc401a5df140309edd6f14debdba42'),
+      P('BISHI111','【模板】差分','入门-8','4bbc401a5df140309edd6f14debdba42','problem-bishi111.html'),
       P('BISHI113','【模板】二维差分', null, '50e1a93989df42efb0b1dec386fb4ccc')
     ]
   },
