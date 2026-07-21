@@ -185,6 +185,12 @@
     font-size:.72rem;color:var(--ink-soft);white-space:nowrap;
     background:var(--surface);border-radius:5px;padding:2px 8px;
   }
+  a.pdiff.explainer-link{
+    color:var(--accent); font-weight:600; text-decoration:none;
+    border:1px solid color-mix(in srgb, var(--accent) 40%, transparent);
+    background:transparent;
+  }
+  a.pdiff.explainer-link:hover{text-decoration:underline;}
 </style>
 </head>
 <body>
@@ -410,7 +416,7 @@ const DRAW_FUNCS = { array: renderArrayScene, grid: renderGridScene, bit: render
 function T(value){ return {type:'text', value}; }
 function B(answer, alts){ return {type:'blank', answer, alts}; }
 /* num/title/diff 来自牛客题库「笔试模板必刷」页面实际抓取，uuid 是该题的 /practice/ 详情页标识 */
-function P(num, title, diff, uuid){ return {num, title, diff, href:`https://www.nowcoder.com/practice/${uuid}`}; }
+function P(num, title, diff, uuid, explainer){ return {num, title, diff, href:`https://www.nowcoder.com/practice/${uuid}`, explainer}; }
 
 /* ---------- 步骤数据生成 ---------- */
 function buildPrefixSteps(arr){
@@ -577,7 +583,7 @@ const TOPICS = [
     ],
     problemNote:'这几题在牛客分类里实际归在后面「数据结构」大类下的"前缀和与差分"，因为是最基础的套路，提前放在 Day1 讲，不影响你的刷题顺序。',
     problems:[
-      P('BISHI110','【模板】静态区间和（前缀和）','入门-7','ac79a1a4a66646cc87525d6faa86e021'),
+      P('BISHI110','【模板】静态区间和（前缀和）','入门-7','ac79a1a4a66646cc87525d6faa86e021','problem-bishi110.html'),
       P('BISHI111','【模板】差分','入门-8','4bbc401a5df140309edd6f14debdba42'),
       P('BISHI112','【模板】二维前缀和','入门-9','99eb8040d116414ea3296467ce81cbbc')
     ]
@@ -834,6 +840,13 @@ function renderProblemList(container, problems, note){
     a.href = p.href; a.target = '_blank'; a.rel = 'noopener';
     a.textContent = `${p.num} · ${p.title}`;
     li.appendChild(a);
+    if(p.explainer){
+      const ea = document.createElement('a');
+      ea.href = p.explainer;
+      ea.className = 'pdiff explainer-link';
+      ea.textContent = '📖 图解讲解';
+      li.appendChild(ea);
+    }
     if(p.diff){
       const span = document.createElement('span');
       span.className = 'pdiff';
