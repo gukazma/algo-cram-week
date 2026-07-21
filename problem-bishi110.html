@@ -243,7 +243,17 @@
     </div>
     <div class="card warn">
       <h3>3. 下标从哪里开始，全程要一致</h3>
-      <p>题目里 l, r ∈ [1, n]，是从 1 开始编号的。把数组开成 n+1 大小、下标 1 到 n 存数据（下标 0 空着不用），可以让代码里的下标和题目描述里的编号完全对上，不用再心算"要不要减一"。这也是为什么 <code>prefix[0] = 0</code> 要单独初始化——它是"前 0 个数的和"，查询 l=1 时会用到它。</p>
+      <p>题目里 l, r ∈ [1, n]，是从 1 开始编号的。把数组开成 n+1 大小、下标 1 到 n 存数据（下标 0 空着不用），可以让代码里的下标和题目描述里的编号完全对上，不用再心算"要不要减一"。</p>
+      <p><strong>a 和 prefix 两个数组开 n+1，原因其实不一样：</strong></p>
+      <ul>
+        <li><code>prefix</code> 的 n+1 是<strong>必须的</strong>：公式 <code>prefix[r] - prefix[l-1]</code> 在 l=1 时要用到 <code>prefix[0]</code>（"前 0 个数的和" = 0），少了它这个哨兵，l=1 的查询就会越界访问 <code>prefix[-1]</code>。</li>
+        <li><code>a</code> 的 n+1 只是<strong>图方便</strong>：如果开成 <code>vector&lt;long long&gt; a(n)</code>（下标 0..n-1），代码里每次读写都要写成 <code>a[i-1]</code> 才能对应题目里的 a[i]，容易漏减或多减；开成 n+1、下标 1..n、把下标 0 空着不用，就能让代码里的 <code>a[i]</code> 和题目里的 a[i] 完全一致，浪费一个格子换来全程不用心算偏移量。</li>
+      </ul>
+      <pre class="code-block"><code>vector&lt;long long&gt; a(n);        // 0-indexed: a[0]..a[n-1]
+scanf("%lld", &amp;a[i - 1]);      // 每次都要减一，容易出错
+
+vector&lt;long long&gt; a(n + 1);    // 1-indexed: a[0] 空着，a[1]..a[n] 存数据
+scanf("%lld", &amp;a[i]);          // 代码里的 a[i] 就是题目里的 a[i]</code></pre>
     </div>
 
     <table class="io-desc">
